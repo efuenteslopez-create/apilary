@@ -40,3 +40,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Cloudflare Workers
+.dev.vars
+.open-next/
+.wrangler/
+
+# Supabase
+supabase/.temp/
+

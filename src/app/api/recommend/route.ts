@@ -70,30 +70,28 @@ export async function POST(req: NextRequest) {
 
     // Step 3: Server-side logging to Supabase queries table (Service Role)
     if (isSupabaseConfigured()) {
-      (async () => {
-        try {
-          // Check if candidate IDs are valid UUIDs for Postgres UUID columns
-          const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-          const candidateUuids = candidates.map(c => c.id).filter(id => uuidRegex.test(id));
-          const recommendedUuids = response.recommendations.map(r => r.api_id).filter(id => uuidRegex.test(id));
-          const architectPickUuid = response.architect_verdict.selected_api_id && uuidRegex.test(response.architect_verdict.selected_api_id)
-            ? response.architect_verdict.selected_api_id
-            : null;
+      try {
+        // Check if candidate IDs are valid UUIDs for Postgres UUID columns
+        const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+        const candidateUuids = candidates.map(c => c.id).filter(id => uuidRegex.test(id));
+        const recommendedUuids = response.recommendations.map(r => r.api_id).filter(id => uuidRegex.test(id));
+        const architectPickUuid = response.architect_verdict.selected_api_id && uuidRegex.test(response.architect_verdict.selected_api_id)
+          ? response.architect_verdict.selected_api_id
+          : null;
 
-          await supabaseAdmin.from('queries').insert({
-            id: response.query_id,
-            query_text: queryText,
-            selected_category: candidates[0]?.category || null,
-            candidate_ids: candidateUuids.length > 0 ? candidateUuids : null,
-            recommended_ids: recommendedUuids.length > 0 ? recommendedUuids : null,
-            architect_pick_id: architectPickUuid,
-            response_payload: response,
-            response_time_ms: response.response_time_ms
-          });
-        } catch (dbErr) {
-          console.warn('Logging to Supabase queries table skipped:', dbErr);
-        }
-      })();
+        await supabaseAdmin.from('queries').insert({
+          id: response.query_id,
+          query_text: queryText,
+          selected_category: candidates[0]?.category || null,
+          candidate_ids: candidateUuids.length > 0 ? candidateUuids : null,
+          recommended_ids: recommendedUuids.length > 0 ? recommendedUuids : null,
+          architect_pick_id: architectPickUuid,
+          response_payload: response,
+          response_time_ms: response.response_time_ms
+        });
+      } catch (dbErr) {
+        console.warn('Logging to Supabase queries table skipped:', dbErr);
+      }
     }
 
     return NextResponse.json(response);
