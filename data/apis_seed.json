@@ -1,0 +1,5960 @@
+[
+  {
+    "name": "Stripe",
+    "slug": "stripe",
+    "description": "Industry-standard global payment infrastructure for internet businesses, supporting credit cards, subscriptions, and payouts.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "subscriptions",
+      "checkout",
+      "billing",
+      "credit-card",
+      "saas",
+      "invoices",
+      "ecommerce"
+    ],
+    "website_url": "https://stripe.com",
+    "docs_url": "https://docs.stripe.com/api",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": false,
+    "pricing_summary": "Pay-as-you-go: 2.9% + $0.30 per successful card charge",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "ruby",
+      "go",
+      "java",
+      "php",
+      "node"
+    ],
+    "base_url": "https://api.stripe.com/v1",
+    "auth_header": "Bearer sk_test_...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Fintoc",
+    "slug": "fintoc",
+    "description": "Account-to-Account (A2A) payment initiation and recurring direct debit (PAC) infrastructure for Chile and Mexico.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "chile",
+      "mexico",
+      "latam",
+      "a2a",
+      "bank-transfer",
+      "pac",
+      "subscriptions",
+      "direct-debit"
+    ],
+    "website_url": "https://fintoc.com",
+    "docs_url": "https://docs.fintoc.com",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier sandbox; ~1.0% + fixed fee per bank transfer in production",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "ruby"
+    ],
+    "base_url": "https://api.fintoc.com/v1",
+    "auth_header": "Bearer sk_live_...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Mercado Pago",
+    "slug": "mercado-pago",
+    "description": "Leading Latin American payment gateway supporting credit cards, debit cards, cash vouchers, and installment payments.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "latam",
+      "argentina",
+      "brazil",
+      "chile",
+      "mexico",
+      "colombia",
+      "checkout",
+      "installments",
+      "pix"
+    ],
+    "website_url": "https://www.mercadopago.com",
+    "docs_url": "https://www.mercadopago.com/developers",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": false,
+    "pricing_summary": "Pay-as-you-go: 3.19% to 4.99% + fixed fee depending on release time",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "java",
+      "php",
+      "dotnet"
+    ],
+    "base_url": "https://api.mercadopago.com/v1",
+    "auth_header": "Bearer APP_USR-...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Lemon Squeezy",
+    "slug": "lemon-squeezy",
+    "description": "Merchant of Record (MoR) for software and digital products, handling global sales tax, VAT, and recurring subscriptions.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "mor",
+      "vat",
+      "sales-tax",
+      "subscriptions",
+      "saas",
+      "digital-products",
+      "checkout"
+    ],
+    "website_url": "https://lemonsqueezy.com",
+    "docs_url": "https://docs.lemonsqueezy.com/api",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "5% + $0.50 per transaction (includes tax handling and MoR)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "php"
+    ],
+    "base_url": "https://api.lemonsqueezy.com/v1",
+    "auth_header": "Bearer eyJ...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Paddle",
+    "slug": "paddle",
+    "description": "Complete billing, subscription, and tax compliance platform operating as Merchant of Record for B2B and B2C SaaS.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "mor",
+      "saas",
+      "b2b",
+      "tax-compliance",
+      "subscriptions",
+      "global-billing",
+      "invoicing"
+    ],
+    "website_url": "https://paddle.com",
+    "docs_url": "https://developer.paddle.com/api-reference/overview",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": false,
+    "pricing_summary": "5% + $0.50 per transaction for SaaS",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "php",
+      "dotnet"
+    ],
+    "base_url": "https://api.paddle.com",
+    "auth_header": "Bearer pdl_...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PayPal",
+    "slug": "paypal",
+    "description": "Global digital wallet and checkout system with widespread consumer adoption across 200+ markets.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "wallet",
+      "checkout",
+      "ecommerce",
+      "international",
+      "subscriptions"
+    ],
+    "website_url": "https://developer.paypal.com",
+    "docs_url": "https://developer.paypal.com/docs/api/overview",
+    "api_type": "REST",
+    "auth_type": "OAuth2",
+    "has_free_tier": false,
+    "pricing_summary": "2.99% + $0.49 per standard transaction",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "java",
+      "php",
+      "dotnet",
+      "go"
+    ],
+    "base_url": "https://api-m.paypal.com/v2",
+    "auth_header": "Bearer A21...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Plaid",
+    "slug": "plaid",
+    "description": "Financial data aggregation and bank account verification API connecting thousands of financial institutions.",
+    "category": "payments",
+    "keywords": [
+      "open-banking",
+      "bank-verification",
+      "ach",
+      "fintech",
+      "account-auth",
+      "transactions",
+      "balance"
+    ],
+    "website_url": "https://plaid.com",
+    "docs_url": "https://plaid.com/docs/api",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free Sandbox & Development (up to 100 live items); Production pay-per-call",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "ruby",
+      "java",
+      "go"
+    ],
+    "base_url": "https://production.plaid.com",
+    "auth_header": "PLAID-CLIENT-ID & PLAID-SECRET",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Square Payments",
+    "slug": "square-payments",
+    "description": "Omnichannel payments API supporting online checkout, in-person POS hardware, and subscription billing.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "pos",
+      "point-of-sale",
+      "ecommerce",
+      "in-person",
+      "checkout",
+      "cards"
+    ],
+    "website_url": "https://squareup.com",
+    "docs_url": "https://developer.squareup.com/reference/square",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "2.9% + $0.30 per online transaction; Sandbox free",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "ruby",
+      "java",
+      "php",
+      "dotnet"
+    ],
+    "base_url": "https://connect.squareup.com/v2",
+    "auth_header": "Bearer EAAA...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Adyen",
+    "slug": "adyen",
+    "description": "Enterprise-grade unified commerce platform providing acquiring, processing, and risk management globally.",
+    "category": "payments",
+    "keywords": [
+      "enterprise",
+      "global-payments",
+      "acquiring",
+      "unified-commerce",
+      "point-of-sale",
+      "fraud-prevention"
+    ],
+    "website_url": "https://adyen.com",
+    "docs_url": "https://docs.adyen.com/api-explorer",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": false,
+    "pricing_summary": "Interchange++ pricing model + fixed €0.11 processing fee per transaction",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "java",
+      "php",
+      "dotnet",
+      "go"
+    ],
+    "base_url": "https://checkout-test.adyen.com/v71",
+    "auth_header": "X-API-Key: ...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Coinbase Commerce",
+    "slug": "coinbase-commerce",
+    "description": "Cryptocurrency payment gateway allowing merchants to accept Bitcoin, Ethereum, USDC, and other crypto assets directly.",
+    "category": "payments",
+    "keywords": [
+      "crypto",
+      "bitcoin",
+      "ethereum",
+      "usdc",
+      "blockchain",
+      "checkout",
+      "web3"
+    ],
+    "website_url": "https://commerce.coinbase.com",
+    "docs_url": "https://docs.cloud.coinbase.com/commerce/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "1% transaction fee on crypto settlements",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "php",
+      "ruby"
+    ],
+    "base_url": "https://api.commerce.coinbase.com",
+    "auth_header": "X-CC-Api-Key: ...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Braintree",
+    "slug": "braintree",
+    "description": "PayPal-backed payment platform supporting credit cards, PayPal, Venmo, Apple Pay, and Google Pay with a unified drop-in UI.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "apple-pay",
+      "google-pay",
+      "venmo",
+      "paypal",
+      "vault",
+      "subscriptions"
+    ],
+    "website_url": "https://braintreepayments.com",
+    "docs_url": "https://developer.paypal.com/braintree/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": false,
+    "pricing_summary": "2.59% + $0.49 per standard transaction",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "ruby",
+      "java",
+      "php",
+      "dotnet"
+    ],
+    "base_url": "https://api.braintreegateway.com/merchants",
+    "auth_header": "Basic Auth",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Authorize.Net",
+    "slug": "authorizenet",
+    "description": "Veteran payment gateway provider for US and Canadian businesses with robust recurring billing and virtual terminal.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "card-processing",
+      "us",
+      "canada",
+      "virtual-terminal",
+      "recurring"
+    ],
+    "website_url": "https://authorize.net",
+    "docs_url": "https://developer.authorize.net/api/reference/index.html",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": false,
+    "pricing_summary": "$25/month gateway fee + 2.9% + $0.30 per transaction",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "java",
+      "php",
+      "dotnet",
+      "ruby"
+    ],
+    "base_url": "https://api.authorize.net/xml/v1/request.api",
+    "auth_header": "API Login ID & Transaction Key",
+    "https": true,
+    "cors": "no"
+  },
+  {
+    "name": "Kushki",
+    "slug": "kushki",
+    "description": "Latin American payment orchestration platform with localized acquiring in Colombia, Mexico, Chile, Peru, and Ecuador.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "latam",
+      "colombia",
+      "peru",
+      "ecuador",
+      "chile",
+      "mexico",
+      "cards",
+      "transfers"
+    ],
+    "website_url": "https://kushkipagos.com",
+    "docs_url": "https://docs.kushkipagos.com",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": false,
+    "pricing_summary": "Custom percentage fees per country + fixed per-transaction fee",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "java",
+      "php"
+    ],
+    "base_url": "https://api.kushkipagos.com",
+    "auth_header": "Private-Merchant-Id: ...",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "dLocal",
+    "slug": "dlocal",
+    "description": "Cross-border payment infrastructure for emerging markets in LATAM, APAC, and Africa, enabling global merchants to accept local cards and bank transfers.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "cross-border",
+      "emerging-markets",
+      "latam",
+      "apac",
+      "africa",
+      "local-cards"
+    ],
+    "website_url": "https://dlocal.com",
+    "docs_url": "https://docs.dlocal.com",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": false,
+    "pricing_summary": "Volume-based interchange + percentage fee for enterprise merchants",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "java",
+      "php"
+    ],
+    "base_url": "https://api.dlocal.com",
+    "auth_header": "X-Date, X-Login, X-Trans-Key",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Openpay",
+    "slug": "openpay",
+    "description": "BBVA-owned Mexican payment gateway supporting card payments, SPEI bank transfers, and cash collections at convenience stores.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "mexico",
+      "spei",
+      "oxxo",
+      "bbva",
+      "latam",
+      "subscriptions"
+    ],
+    "website_url": "https://www.openpay.mx",
+    "docs_url": "https://www.openpay.mx/docs/api",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": false,
+    "pricing_summary": "2.9% + $2.50 MXN per card charge; $8.00 MXN per SPEI transfer",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "java",
+      "php",
+      "dotnet",
+      "ruby"
+    ],
+    "base_url": "https://api.openpay.mx/v1",
+    "auth_header": "Basic Auth (Private Key)",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Transbank Webpay Plus",
+    "slug": "transbank-webpay",
+    "description": "The primary card processing network and payment gateway in Chile, supporting Redcompra, Visa, and Mastercard.",
+    "category": "payments",
+    "keywords": [
+      "payments",
+      "chile",
+      "webpay",
+      "redcompra",
+      "transbank",
+      "debit",
+      "credit-card",
+      "oneclick"
+    ],
+    "website_url": "https://www.transbank.cl",
+    "docs_url": "https://www.transbankdevelopers.cl",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free Integration Environment; Production fee ~1.49% to 2.95% + IVA depending on volume",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "java",
+      "php",
+      "dotnet"
+    ],
+    "base_url": "https://webpay3gint.transbank.cl/rswebpaytransaction/api/webpay/v1.2",
+    "auth_header": "Tbk-Api-Key-Id & Tbk-Api-Key-Secret",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "OpenAI",
+    "slug": "openai",
+    "description": "GPT-4o, o1 reasoning, embeddings, and Whisper speech models.",
+    "category": "ai-ml",
+    "keywords": [
+      "ai",
+      "llm",
+      "gpt-4",
+      "chat",
+      "embeddings",
+      "speech-to-text",
+      "vision"
+    ],
+    "website_url": "https://openai.com",
+    "docs_url": "https://openai.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": false,
+    "pricing_summary": "Pay-per-token ($0.15 - $5.00 / 1M tokens)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.openai.com/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Anthropic",
+    "slug": "anthropic",
+    "description": "Claude 3.5 Sonnet and Haiku models with industry-leading code reasoning.",
+    "category": "ai-ml",
+    "keywords": [
+      "ai",
+      "claude",
+      "llm",
+      "coding",
+      "reasoning",
+      "vision",
+      "agents"
+    ],
+    "website_url": "https://anthropic.com",
+    "docs_url": "https://anthropic.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": false,
+    "pricing_summary": "Pay-per-token ($0.25 - $15.00 / 1M tokens)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.anthropic.com/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Google Gemini API",
+    "slug": "google-gemini",
+    "description": "Gemini 2.5 Flash and Pro with 1M token context window and native multimodal.",
+    "category": "ai-ml",
+    "keywords": [
+      "ai",
+      "gemini",
+      "multimodal",
+      "fast",
+      "large-context",
+      "vision",
+      "audio"
+    ],
+    "website_url": "https://google-gemini.com",
+    "docs_url": "https://google-gemini.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier generous; Paid from $0.075 / 1M tokens",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://generativelanguage.googleapis.com/v1beta",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Groq",
+    "slug": "groq",
+    "description": "Ultra-fast LPU inference engine for open models (Llama 3, Mixtral, Whisper).",
+    "category": "ai-ml",
+    "keywords": [
+      "ai",
+      "fast-inference",
+      "lpu",
+      "llama3",
+      "whisper",
+      "low-latency",
+      "open-source"
+    ],
+    "website_url": "https://groq.com",
+    "docs_url": "https://groq.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Generous free tier; Paid $0.05 - $0.59 / 1M tokens",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.groq.com/openai/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Mistral AI",
+    "slug": "mistral-ai",
+    "description": "European open-weight and proprietary AI models (Mistral Large, Codestral, Pixtral).",
+    "category": "ai-ml",
+    "keywords": [
+      "ai",
+      "llm",
+      "codestral",
+      "open-weights",
+      "code-gen",
+      "multilingual"
+    ],
+    "website_url": "https://mistral-ai.com",
+    "docs_url": "https://mistral-ai.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": false,
+    "pricing_summary": "Pay-per-token from $0.20 / 1M tokens",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.mistral.ai/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Cohere",
+    "slug": "cohere",
+    "description": "Enterprise NLP, Command R+, Embed v3, and state-of-the-art ReRank API.",
+    "category": "ai-ml",
+    "keywords": [
+      "ai",
+      "embeddings",
+      "rerank",
+      "rag",
+      "search",
+      "enterprise-nlp"
+    ],
+    "website_url": "https://cohere.com",
+    "docs_url": "https://cohere.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free trial tier; Paid per call",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.cohere.com/v2",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "ElevenLabs",
+    "slug": "elevenlabs",
+    "description": "Industry-leading realistic voice cloning and text-to-speech generation API.",
+    "category": "ai-ml",
+    "keywords": [
+      "voice",
+      "tts",
+      "text-to-speech",
+      "voice-cloning",
+      "audio",
+      "ai-voice"
+    ],
+    "website_url": "https://elevenlabs.com",
+    "docs_url": "https://elevenlabs.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10,000 characters/mo; Paid from $5/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.elevenlabs.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "AssemblyAI",
+    "slug": "assemblyai",
+    "description": "Speech-to-text API with speaker diarization, sentiment analysis, and summaries.",
+    "category": "ai-ml",
+    "keywords": [
+      "speech-to-text",
+      "transcription",
+      "audio",
+      "diarization",
+      "subtitles",
+      "ai"
+    ],
+    "website_url": "https://assemblyai.com",
+    "docs_url": "https://assemblyai.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 100 hrs sandbox; Paid $0.37 / hr audio",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.assemblyai.com/v2",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Deepgram",
+    "slug": "deepgram",
+    "description": "Real-time speech-to-text Nova-2 model with sub-second latency for voice agents.",
+    "category": "ai-ml",
+    "keywords": [
+      "speech-to-text",
+      "transcription",
+      "real-time",
+      "websocket",
+      "voice-bot",
+      "audio"
+    ],
+    "website_url": "https://deepgram.com",
+    "docs_url": "https://deepgram.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "$200 free credit; $0.0043 / min streaming",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.deepgram.com/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "DeepL",
+    "slug": "deepl",
+    "description": "Highest quality natural machine translation API across 30+ languages.",
+    "category": "ai-ml",
+    "keywords": [
+      "translation",
+      "language",
+      "multilingual",
+      "nlp",
+      "localization",
+      "documents"
+    ],
+    "website_url": "https://deepl.com",
+    "docs_url": "https://deepl.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 500,000 chars/mo; Pro from $5.49/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api-free.deepl.com/v2",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Replicate",
+    "slug": "replicate",
+    "description": "Serverless platform to run open-source diffusion, video, audio, and language models.",
+    "category": "ai-ml",
+    "keywords": [
+      "open-source",
+      "stable-diffusion",
+      "flux",
+      "whisper",
+      "gpu",
+      "serverless"
+    ],
+    "website_url": "https://replicate.com",
+    "docs_url": "https://replicate.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": false,
+    "pricing_summary": "Pay per second of GPU usage",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.replicate.com/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Hugging Face Inference",
+    "slug": "huggingface-inference",
+    "description": "Host and run 100,000+ open-source AI models via standardized HTTP endpoints.",
+    "category": "ai-ml",
+    "keywords": [
+      "open-source",
+      "models",
+      "huggingface",
+      "bert",
+      "transformers",
+      "nlp"
+    ],
+    "website_url": "https://huggingface-inference.com",
+    "docs_url": "https://huggingface-inference.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free rate-limited tier; Dedicated endpoints paid per hr",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api-inference.huggingface.co/models",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Tavily",
+    "slug": "tavily",
+    "description": "Search engine API built specifically for AI agents and LLM RAG pipelines.",
+    "category": "ai-ml",
+    "keywords": [
+      "ai-search",
+      "rag",
+      "agents",
+      "web-search",
+      "citations",
+      "grounding"
+    ],
+    "website_url": "https://tavily.com",
+    "docs_url": "https://tavily.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1,000 searches/mo; Pro: $0.008/search",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.tavily.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Perplexity API",
+    "slug": "perplexity",
+    "description": "Sonar online reasoning models with live web citations for factual LLM responses.",
+    "category": "ai-ml",
+    "keywords": [
+      "ai",
+      "search",
+      "sonar",
+      "live-data",
+      "citations",
+      "fact-checking"
+    ],
+    "website_url": "https://perplexity.com",
+    "docs_url": "https://perplexity.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": false,
+    "pricing_summary": "Pay per token + request fee ($0.005/req)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.perplexity.ai",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Mindee",
+    "slug": "mindee",
+    "description": "Computer vision and OCR API for parsing receipts, invoices, passports, and IDs.",
+    "category": "ai-ml",
+    "keywords": [
+      "ocr",
+      "invoices",
+      "receipts",
+      "passports",
+      "document-parsing",
+      "vision"
+    ],
+    "website_url": "https://mindee.com",
+    "docs_url": "https://mindee.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 250 pages/mo; Paid from $0.10/doc",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.mindee.net/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "OCR.space",
+    "slug": "ocr-space",
+    "description": "Fast cloud OCR API supporting PDFs, images, and multi-language text extraction.",
+    "category": "ai-ml",
+    "keywords": [
+      "ocr",
+      "pdf-text",
+      "image-to-text",
+      "scanner",
+      "free-ocr",
+      "document"
+    ],
+    "website_url": "https://ocr-space.com",
+    "docs_url": "https://ocr-space.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 25,000 requests/mo; Paid from $15/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.ocr.space/parse/image",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Voyage AI",
+    "slug": "voyage-ai",
+    "description": "State-of-the-art embedding and reranker models optimized for finance, code, and RAG.",
+    "category": "ai-ml",
+    "keywords": [
+      "embeddings",
+      "rag",
+      "vector-search",
+      "rerank",
+      "finance-nlp",
+      "code-search"
+    ],
+    "website_url": "https://voyage-ai.com",
+    "docs_url": "https://voyage-ai.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 50M tokens; Paid from $0.10 / 1M tokens",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.voyageai.com/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Together AI",
+    "slug": "together-ai",
+    "description": "High-performance serverless cloud for open LLMs, DeepSeek, and image generation.",
+    "category": "ai-ml",
+    "keywords": [
+      "open-source",
+      "deepseek",
+      "llama",
+      "fast-inference",
+      "fine-tuning",
+      "flux"
+    ],
+    "website_url": "https://together-ai.com",
+    "docs_url": "https://together-ai.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "$5 free credit; Pay per token",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.together.xyz/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Twilio",
+    "slug": "twilio",
+    "description": "Global communications API for SMS, voice calls, WhatsApp, and OTP phone verification.",
+    "category": "sms-notifications",
+    "keywords": [
+      "sms",
+      "voice",
+      "whatsapp",
+      "otp",
+      "2fa",
+      "verification",
+      "telephony"
+    ],
+    "website_url": "https://twilio.com",
+    "docs_url": "https://twilio.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Pay-as-you-go: ~$0.0079/SMS; Free trial credit $15",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.twilio.com/2010-04-01",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Vonage (Nexmo)",
+    "slug": "vonage",
+    "description": "Communications platform offering SMS messaging, voice SIP, video, and verify API.",
+    "category": "sms-notifications",
+    "keywords": [
+      "sms",
+      "voice",
+      "verify",
+      "2fa",
+      "telecom",
+      "whatsapp",
+      "sip"
+    ],
+    "website_url": "https://vonage.com",
+    "docs_url": "https://vonage.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Pay per message (~$0.0068/SMS in US)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://rest.nexmo.com/sms/json",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "MessageBird (Bird)",
+    "slug": "messagebird",
+    "description": "Omnichannel customer messaging API covering SMS, WhatsApp, Email, and Instagram DM.",
+    "category": "sms-notifications",
+    "keywords": [
+      "sms",
+      "whatsapp",
+      "omnichannel",
+      "instagram-dm",
+      "otp",
+      "conversations"
+    ],
+    "website_url": "https://messagebird.com",
+    "docs_url": "https://messagebird.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": false,
+    "pricing_summary": "Pay-as-you-go per channel message",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://rest.messagebird.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Infobip",
+    "slug": "infobip",
+    "description": "Global enterprise cloud communications provider with high throughput across 190+ countries.",
+    "category": "sms-notifications",
+    "keywords": [
+      "enterprise-sms",
+      "whatsapp",
+      "rcs",
+      "voice",
+      "omnichannel",
+      "2fa"
+    ],
+    "website_url": "https://infobip.com",
+    "docs_url": "https://infobip.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Pay-as-you-go with volume discounts",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.infobip.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Novu",
+    "slug": "novu",
+    "description": "Open-source notification center infrastructure orchestrating Email, SMS, Push, and In-app feeds.",
+    "category": "sms-notifications",
+    "keywords": [
+      "notifications",
+      "in-app-feed",
+      "push-notifications",
+      "sms",
+      "email",
+      "open-source"
+    ],
+    "website_url": "https://novu.com",
+    "docs_url": "https://novu.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 30,000 events/mo; Paid from $30/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.novu.co/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Courier",
+    "slug": "courier",
+    "description": "Unified notification routing API combining multi-channel templates, batching, and analytics.",
+    "category": "sms-notifications",
+    "keywords": [
+      "notifications",
+      "multi-channel",
+      "routing",
+      "email",
+      "sms",
+      "slack",
+      "push"
+    ],
+    "website_url": "https://courier.com",
+    "docs_url": "https://courier.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10,000 messages/mo; Paid from $99/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.courier.com",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Knock",
+    "slug": "knock",
+    "description": "Flexible notifications infrastructure for modern SaaS with workflow builder and user preferences.",
+    "category": "sms-notifications",
+    "keywords": [
+      "notifications",
+      "workflows",
+      "in-app",
+      "preferences",
+      "slack-alerts",
+      "batching"
+    ],
+    "website_url": "https://knock.com",
+    "docs_url": "https://knock.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10,000 notifications/mo; Pro: $250/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.knock.app/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "OneSignal",
+    "slug": "onesignal",
+    "description": "Market leader in mobile/web push notifications, in-app messaging, and SMS campaigns.",
+    "category": "sms-notifications",
+    "keywords": [
+      "push-notifications",
+      "mobile-push",
+      "web-push",
+      "in-app-messaging",
+      "sms"
+    ],
+    "website_url": "https://onesignal.com",
+    "docs_url": "https://onesignal.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10,000 subscribers; Growth from $9/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://onesignal.com/api/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Firebase Cloud Messaging (FCM)",
+    "slug": "fcm",
+    "description": "Google's cross-platform messaging solution for reliably sending push notifications to Android, iOS, and Web.",
+    "category": "sms-notifications",
+    "keywords": [
+      "push-notifications",
+      "firebase",
+      "android",
+      "ios",
+      "google",
+      "free-push"
+    ],
+    "website_url": "https://fcm.com",
+    "docs_url": "https://fcm.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "100% Free and unlimited",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://fcm.googleapis.com/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Pusher Channels",
+    "slug": "pusher",
+    "description": "Hosted real-time WebSocket infrastructure for live updates, chat, and in-app events.",
+    "category": "sms-notifications",
+    "keywords": [
+      "websockets",
+      "realtime",
+      "chat",
+      "live-events",
+      "presence",
+      "pubsub"
+    ],
+    "website_url": "https://pusher.com",
+    "docs_url": "https://pusher.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 200k messages/day, 100 connections; Paid from $49/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.pusher.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Ably",
+    "slug": "ably",
+    "description": "Enterprise pub/sub realtime messaging platform with guaranteed delivery and 99.999% uptime.",
+    "category": "sms-notifications",
+    "keywords": [
+      "realtime",
+      "websockets",
+      "pubsub",
+      "chat",
+      "multiplayer",
+      "iot"
+    ],
+    "website_url": "https://ably.com",
+    "docs_url": "https://ably.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 6M msgs/mo, 200 peak connections; Paid from $29/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://rest.ably.io",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Sinapi (Chile)",
+    "slug": "sinapi-sms",
+    "description": "Specialized SMS routing gateway for Chilean mobile carriers (Entel, Movistar, Claro, WOM).",
+    "category": "sms-notifications",
+    "keywords": [
+      "sms",
+      "chile",
+      "latam",
+      "otp",
+      "movistar",
+      "entel",
+      "claro"
+    ],
+    "website_url": "https://sinapi-sms.com",
+    "docs_url": "https://sinapi-sms.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "From $12 CLP per SMS (~$0.012 USD)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.sinapi.cl/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Resend",
+    "slug": "resend",
+    "description": "Modern email API for developers with first-class React Email component support and clean SDKs.",
+    "category": "email",
+    "keywords": [
+      "email",
+      "transactional-email",
+      "react-email",
+      "nextjs",
+      "smtp",
+      "developer-first"
+    ],
+    "website_url": "https://resend.com",
+    "docs_url": "https://resend.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 3,000 emails/mo (100/day); Pro: $20/mo (50,000 emails)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.resend.com/emails",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Postmark",
+    "slug": "postmark",
+    "description": "Industry-leading transactional email deliverability and lightning fast inbox arrival speeds.",
+    "category": "email",
+    "keywords": [
+      "email",
+      "transactional",
+      "deliverability",
+      "inbox",
+      "smtp",
+      "high-speed"
+    ],
+    "website_url": "https://postmark.com",
+    "docs_url": "https://postmark.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 100 emails/mo; Paid from $15/mo (10,000 emails)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.postmarkapp.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "SendGrid",
+    "slug": "sendgrid",
+    "description": "High-volume cloud email delivery platform for transactional and marketing campaigns.",
+    "category": "email",
+    "keywords": [
+      "email",
+      "high-volume",
+      "marketing-campaigns",
+      "smtp",
+      "analytics",
+      "deliverability"
+    ],
+    "website_url": "https://sendgrid.com",
+    "docs_url": "https://sendgrid.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 100 emails/day; Essentials from $19.95/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.sendgrid.com/v3",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Mailgun",
+    "slug": "mailgun",
+    "description": "Developer-focused email API with powerful inbound routing, parsing, and email validation.",
+    "category": "email",
+    "keywords": [
+      "email",
+      "inbound-routing",
+      "email-validation",
+      "smtp",
+      "logs",
+      "webhooks"
+    ],
+    "website_url": "https://mailgun.com",
+    "docs_url": "https://mailgun.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free trial 5,000 emails/mo; Foundation: $35/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.mailgun.net/v3",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Amazon SES",
+    "slug": "amazon-ses",
+    "description": "Cost-effective cloud email service built on reliable Amazon Web Services infrastructure.",
+    "category": "email",
+    "keywords": [
+      "email",
+      "aws",
+      "cheap-email",
+      "bulk-email",
+      "smtp",
+      "high-scale"
+    ],
+    "website_url": "https://amazon-ses.com",
+    "docs_url": "https://amazon-ses.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "$0.10 per 1,000 emails (free tier if hosted in EC2)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://email.us-east-1.amazonaws.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Plunk",
+    "slug": "plunk",
+    "description": "Open-source transactional email platform built on AWS SES with clean REST API.",
+    "category": "email",
+    "keywords": [
+      "email",
+      "open-source",
+      "cheap",
+      "ses",
+      "marketing",
+      "transactional"
+    ],
+    "website_url": "https://plunk.com",
+    "docs_url": "https://plunk.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 3,000 emails/mo; Paid: $10/mo for 25k",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.useplunk.com/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Hunter.io",
+    "slug": "hunter-io",
+    "description": "Email finder and verification API to discover professional email addresses for domains.",
+    "category": "email",
+    "keywords": [
+      "email-verification",
+      "email-finder",
+      "lead-generation",
+      "b2b",
+      "domain-search"
+    ],
+    "website_url": "https://hunter-io.com",
+    "docs_url": "https://hunter-io.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 25 searches/mo; Paid from $49/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.hunter.io/v2",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Abstract Email Validation",
+    "slug": "abstract-email-validation",
+    "description": "Real-time email verification API detecting disposable emails, MX records, and typos.",
+    "category": "email",
+    "keywords": [
+      "email-validation",
+      "disposable-email",
+      "smtp-check",
+      "fraud-prevention",
+      "mx-lookup"
+    ],
+    "website_url": "https://abstract-email-validation.com",
+    "docs_url": "https://abstract-email-validation.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 100 requests/mo; Paid from $9/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://emailvalidation.abstractapi.com/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Google Maps Platform",
+    "slug": "google-maps",
+    "description": "The definitive mapping, routing, geocoding, and Places API with unmatched global accuracy.",
+    "category": "maps-geo",
+    "keywords": [
+      "maps",
+      "geocoding",
+      "places",
+      "routing",
+      "directions",
+      "autocomplete",
+      "gps"
+    ],
+    "website_url": "https://google-maps.com",
+    "docs_url": "https://google-maps.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "$200 free monthly credit (~28,000 map loads); Pay-as-you-go",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://maps.googleapis.com/maps/api",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Mapbox",
+    "slug": "mapbox",
+    "description": "Custom vector map tiles, turn-by-turn navigation, geocoding, and spatial visualization.",
+    "category": "maps-geo",
+    "keywords": [
+      "maps",
+      "custom-tiles",
+      "navigation",
+      "geocoding",
+      "vector-maps",
+      "mobile-sdk"
+    ],
+    "website_url": "https://mapbox.com",
+    "docs_url": "https://mapbox.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 50,000 map loads, 100k geocodes/mo; Pay-per-use",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.mapbox.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Radar",
+    "slug": "radar",
+    "description": "All-in-one geofencing, location tracking, address autocomplete, and trip tracking API.",
+    "category": "maps-geo",
+    "keywords": [
+      "geofencing",
+      "location-tracking",
+      "geocoding",
+      "distance-matrix",
+      "places",
+      "mobile"
+    ],
+    "website_url": "https://radar.com",
+    "docs_url": "https://radar.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 100,000 API requests/mo; Paid from $499/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.radar.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "OpenCage Geocoding",
+    "slug": "opencage",
+    "description": "Simple, privacy-friendly forward and reverse geocoding API aggregating OpenStreetMap data.",
+    "category": "maps-geo",
+    "keywords": [
+      "geocoding",
+      "reverse-geocoding",
+      "osm",
+      "privacy",
+      "coordinates",
+      "address"
+    ],
+    "website_url": "https://opencage.com",
+    "docs_url": "https://opencage.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 2,500 requests/day; Paid from €50/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.opencagedata.com/geocode/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Nominatim (OpenStreetMap)",
+    "slug": "nominatim",
+    "description": "Free open-source geocoding and reverse geocoding powered by OpenStreetMap community data.",
+    "category": "maps-geo",
+    "keywords": [
+      "geocoding",
+      "osm",
+      "free-geocoding",
+      "open-source",
+      "reverse-geocode"
+    ],
+    "website_url": "https://nominatim.com",
+    "docs_url": "https://nominatim.com/docs",
+    "api_type": "REST",
+    "auth_type": "none",
+    "has_free_tier": true,
+    "pricing_summary": "100% Free (Strict 1 req/sec rate limit)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://nominatim.openstreetmap.org",
+    "auth_header": "None",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Here Technologies",
+    "slug": "here-maps",
+    "description": "Enterprise location suite offering routing, truck routing, traffic data, and fleet tracking.",
+    "category": "maps-geo",
+    "keywords": [
+      "maps",
+      "truck-routing",
+      "traffic",
+      "fleet-management",
+      "geocoding",
+      "enterprise"
+    ],
+    "website_url": "https://here-maps.com",
+    "docs_url": "https://here-maps.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 250,000 transactions/mo; Pay-per-use",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://router.hereapi.com/v8",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "IPInfo",
+    "slug": "ipinfo",
+    "description": "Accurate IP geolocation, ASN lookup, VPN detection, and company domain mapping.",
+    "category": "maps-geo",
+    "keywords": [
+      "ip-geolocation",
+      "ip-lookup",
+      "asn",
+      "vpn-detection",
+      "country-detect",
+      "security"
+    ],
+    "website_url": "https://ipinfo.com",
+    "docs_url": "https://ipinfo.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 50,000 requests/mo; Paid from $49/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://ipinfo.io",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "ipapi",
+    "slug": "ipapi",
+    "description": "Fast IP address location API returning country, city, currency, timezone, and calling code.",
+    "category": "maps-geo",
+    "keywords": [
+      "ip-location",
+      "geolocation",
+      "currency",
+      "timezone",
+      "country-code"
+    ],
+    "website_url": "https://ipapi.com",
+    "docs_url": "https://ipapi.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1,000 requests/day; Paid from $12/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://ipapi.co/json",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Clerk",
+    "slug": "clerk",
+    "description": "Complete developer authentication and user management built specifically for Next.js and React.",
+    "category": "auth-identity",
+    "keywords": [
+      "auth",
+      "nextjs",
+      "user-management",
+      "passkeys",
+      "social-login",
+      "session",
+      "sso"
+    ],
+    "website_url": "https://clerk.com",
+    "docs_url": "https://clerk.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10,000 MAUs; Pro from $25/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.clerk.com/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Auth0 by Okta",
+    "slug": "auth0",
+    "description": "Enterprise identity platform offering Universal Login, MFA, SAML, and Social connections.",
+    "category": "auth-identity",
+    "keywords": [
+      "auth",
+      "enterprise-sso",
+      "saml",
+      "mfa",
+      "oauth2",
+      "jwt",
+      "identity"
+    ],
+    "website_url": "https://auth0.com",
+    "docs_url": "https://auth0.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 7,500 active users; B2C from $35/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://your-tenant.auth0.com/api/v2",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Supabase Auth",
+    "slug": "supabase-auth",
+    "description": "Built-in PostgreSQL authentication supporting email, magic links, social providers, and phone OTP.",
+    "category": "auth-identity",
+    "keywords": [
+      "auth",
+      "postgres-auth",
+      "magic-links",
+      "row-level-security",
+      "open-source"
+    ],
+    "website_url": "https://supabase-auth.com",
+    "docs_url": "https://supabase-auth.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 50,000 MAUs included; Pro $25/mo (100k MAUs)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://your-project.supabase.co/auth/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Kinde",
+    "slug": "kinde",
+    "description": "Modern authentication for SaaS with feature flags, billing tiers, and multi-tenant organizations.",
+    "category": "auth-identity",
+    "keywords": [
+      "auth",
+      "multi-tenant",
+      "feature-flags",
+      "b2b-saas",
+      "passkeys",
+      "sso"
+    ],
+    "website_url": "https://kinde.com",
+    "docs_url": "https://kinde.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10,000 MAUs; Paid from $25/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://your-domain.kinde.com/api/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Stytch",
+    "slug": "stytch",
+    "description": "Passwordless authentication API specializing in Passkeys, Magic Links, WebAuthn, and SMS OTP.",
+    "category": "auth-identity",
+    "keywords": [
+      "passwordless",
+      "passkeys",
+      "webauthn",
+      "magic-links",
+      "biometrics",
+      "fraud-detection"
+    ],
+    "website_url": "https://stytch.com",
+    "docs_url": "https://stytch.com/docs",
+    "api_type": "REST",
+    "auth_type": "Basic",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10,000 monthly active users; Pro $99/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.stytch.com/v1",
+    "auth_header": "None",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "WorkOS",
+    "slug": "workos",
+    "description": "Turnkey enterprise readiness API: Single Sign-On (SAML/Okta), Directory Sync (SCIM), and Magic Auth.",
+    "category": "auth-identity",
+    "keywords": [
+      "enterprise-sso",
+      "saml",
+      "scim",
+      "directory-sync",
+      "b2b-ready",
+      "okta"
+    ],
+    "website_url": "https://workos.com",
+    "docs_url": "https://workos.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free core auth; Enterprise SSO from $125/connection/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.workos.com",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Firebase Authentication",
+    "slug": "firebase-auth",
+    "description": "Google identity backend supporting phone numbers, Google/Apple login, and email passwords.",
+    "category": "auth-identity",
+    "keywords": [
+      "auth",
+      "firebase",
+      "google-login",
+      "apple-login",
+      "phone-auth",
+      "free-tier"
+    ],
+    "website_url": "https://firebase-auth.com",
+    "docs_url": "https://firebase-auth.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free for unlimited email/social; Phone SMS pay-per-use",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://identitytoolkit.googleapis.com/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Logto",
+    "slug": "logto",
+    "description": "Open-source Auth0 alternative with modern UI, multi-tenancy, and RBAC support.",
+    "category": "auth-identity",
+    "keywords": [
+      "auth",
+      "open-source",
+      "rbac",
+      "multi-tenant",
+      "oidc",
+      "self-hosted"
+    ],
+    "website_url": "https://logto.com",
+    "docs_url": "https://logto.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free cloud 50,000 MAUs; Self-host 100% free",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://your-tenant.logto.app/api",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "AWS S3",
+    "slug": "aws-s3",
+    "description": "The global benchmark for scalable cloud object storage with 99.999999999% durability.",
+    "category": "storage-media",
+    "keywords": [
+      "storage",
+      "s3",
+      "object-storage",
+      "cloud-storage",
+      "buckets",
+      "aws",
+      "backups"
+    ],
+    "website_url": "https://aws-s3.com",
+    "docs_url": "https://aws-s3.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "$0.023 per GB/mo; First 5GB free for 12 months",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://s3.amazonaws.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Cloudinary",
+    "slug": "cloudinary",
+    "description": "End-to-end cloud image and video management, on-the-fly AI transformation, and global CDN delivery.",
+    "category": "storage-media",
+    "keywords": [
+      "image-hosting",
+      "video-transcoding",
+      "transformations",
+      "crop",
+      "cdn",
+      "media-ai"
+    ],
+    "website_url": "https://cloudinary.com",
+    "docs_url": "https://cloudinary.com/docs",
+    "api_type": "REST",
+    "auth_type": "Basic",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 25 monthly credits (~25k transforms/GBs); Paid from $89/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.cloudinary.com/v1_1",
+    "auth_header": "None",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Uploadthing",
+    "slug": "uploadthing",
+    "description": "File uploads made effortless for Next.js, React, and full-stack TypeScript applications.",
+    "category": "storage-media",
+    "keywords": [
+      "file-uploads",
+      "nextjs",
+      "s3-wrapper",
+      "type-safe",
+      "react",
+      "images"
+    ],
+    "website_url": "https://uploadthing.com",
+    "docs_url": "https://uploadthing.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 2GB storage, 100MB max file; Paid from $10/mo (100GB)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://uploadthing.com/api",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Imgix",
+    "slug": "imgix",
+    "description": "Real-time image processing, responsive image delivery, and edge optimization API.",
+    "category": "storage-media",
+    "keywords": [
+      "image-optimization",
+      "resize",
+      "cdn",
+      "webp",
+      "responsive-images",
+      "edge"
+    ],
+    "website_url": "https://imgix.com",
+    "docs_url": "https://imgix.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: $10 credit/mo; Paid from $75/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.imgix.com/api/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Backblaze B2",
+    "slug": "backblaze-b2",
+    "description": "S3-compatible cloud object storage at 1/5th the cost of AWS S3 with zero egress to Cloudflare.",
+    "category": "storage-media",
+    "keywords": [
+      "storage",
+      "cheap-storage",
+      "s3-compatible",
+      "backups",
+      "b2",
+      "zero-egress"
+    ],
+    "website_url": "https://backblaze-b2.com",
+    "docs_url": "https://backblaze-b2.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10GB storage; Paid $0.006/GB/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.backblazeb2.com/b2api/v2",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Cloudflare R2",
+    "slug": "cloudflare-r2",
+    "description": "S3-compatible zero-egress fee object storage integrated seamlessly with Cloudflare Workers.",
+    "category": "storage-media",
+    "keywords": [
+      "storage",
+      "zero-egress",
+      "s3-compatible",
+      "cloudflare",
+      "workers",
+      "edge"
+    ],
+    "website_url": "https://cloudflare-r2.com",
+    "docs_url": "https://cloudflare-r2.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10GB storage, 1M write ops; Paid $0.015/GB/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://<account_id>.r2.cloudflarestorage.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Bannerbear",
+    "slug": "bannerbear",
+    "description": "Automate social media graphics, ecommerce banners, and dynamic Open Graph image generation via API.",
+    "category": "storage-media",
+    "keywords": [
+      "image-generation",
+      "open-graph",
+      "banners",
+      "automation",
+      "templates",
+      "social-media"
+    ],
+    "website_url": "https://bannerbear.com",
+    "docs_url": "https://bannerbear.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 30 test images; Paid from $49/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.bannerbear.com/v2",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Neon",
+    "slug": "neon",
+    "description": "Serverless PostgreSQL with instant branching, bottomless storage, and autoscaling to zero.",
+    "category": "databases",
+    "keywords": [
+      "postgres",
+      "serverless",
+      "database",
+      "branching",
+      "sql",
+      "autoscaling"
+    ],
+    "website_url": "https://neon.com",
+    "docs_url": "https://neon.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 0.5 GB storage, 1 project; Paid from $19/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://console.neon.tech/api/v2",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Supabase Database",
+    "slug": "supabase-db",
+    "description": "Full PostgreSQL database with realtime subscriptions, pgvector extensions, and REST/GraphQL APIs.",
+    "category": "databases",
+    "keywords": [
+      "postgres",
+      "pgvector",
+      "realtime",
+      "sql",
+      "database",
+      "open-source"
+    ],
+    "website_url": "https://supabase-db.com",
+    "docs_url": "https://supabase-db.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 500MB database, 2 projects; Pro $25/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://your-project.supabase.co/rest/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Pinecone",
+    "slug": "pinecone",
+    "description": "Managed serverless vector database purpose-built for fast similarity search and high-scale RAG.",
+    "category": "databases",
+    "keywords": [
+      "vector-database",
+      "embeddings",
+      "rag",
+      "similarity-search",
+      "ai-memory"
+    ],
+    "website_url": "https://pinecone.com",
+    "docs_url": "https://pinecone.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 100k vectors, 1 serverless index; Paid per read/write unit",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://your-index.svc.pinecone.io",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Qdrant Cloud",
+    "slug": "qdrant",
+    "description": "Vector similarity search engine with payload filtering and hybrid search capabilities.",
+    "category": "databases",
+    "keywords": [
+      "vector-search",
+      "embeddings",
+      "hybrid-search",
+      "rag",
+      "open-source"
+    ],
+    "website_url": "https://qdrant.com",
+    "docs_url": "https://qdrant.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1GB cluster (approx 50k vectors); Paid from $25/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://your-cluster.qdrant.tech",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Upstash Redis",
+    "slug": "upstash-redis",
+    "description": "Serverless Redis with REST API, per-request pricing, and native edge runtime compatibility.",
+    "category": "databases",
+    "keywords": [
+      "redis",
+      "cache",
+      "serverless",
+      "rate-limiting",
+      "key-value",
+      "queues"
+    ],
+    "website_url": "https://upstash-redis.com",
+    "docs_url": "https://upstash-redis.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10,000 commands/day; Pay-as-you-go $0.20 per 100k commands",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://your-db.upstash.io",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Turso",
+    "slug": "turso",
+    "description": "SQLite database distributed at the edge, built on libSQL with sub-millisecond query latency.",
+    "category": "databases",
+    "keywords": [
+      "sqlite",
+      "edge-database",
+      "libsql",
+      "embedded-replicas",
+      "low-latency"
+    ],
+    "website_url": "https://turso.com",
+    "docs_url": "https://turso.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 9GB total storage, 500 databases; Pro $29/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.turso.tech/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PlanetScale",
+    "slug": "planetscale",
+    "description": "High-scale serverless MySQL platform powered by Vitess with non-blocking schema migrations.",
+    "category": "databases",
+    "keywords": [
+      "mysql",
+      "vitess",
+      "sharding",
+      "zero-downtime",
+      "database",
+      "scale"
+    ],
+    "website_url": "https://planetscale.com",
+    "docs_url": "https://planetscale.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": false,
+    "pricing_summary": "Plans start at $39/mo for scalable production clusters",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.planetscale.com/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "MongoDB Atlas",
+    "slug": "mongodb-atlas",
+    "description": "Multi-cloud developer document database with vector search and aggregation pipeline.",
+    "category": "databases",
+    "keywords": [
+      "nosql",
+      "mongodb",
+      "document-db",
+      "json",
+      "vector-search",
+      "atlas"
+    ],
+    "website_url": "https://mongodb-atlas.com",
+    "docs_url": "https://mongodb-atlas.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: M0 512MB shared cluster; Flex instances pay-per-use",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://cloud.mongodb.com/api/atlas/v2",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Sentry",
+    "slug": "sentry",
+    "description": "Application monitoring and error tracking platform for identifying bugs and tracing performance.",
+    "category": "monitoring-analytics",
+    "keywords": [
+      "error-tracking",
+      "crash-reporting",
+      "performance-monitoring",
+      "traces",
+      "nextjs",
+      "alerts"
+    ],
+    "website_url": "https://sentry.com",
+    "docs_url": "https://sentry.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 5,000 errors/mo; Team from $26/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://sentry.io/api/0",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PostHog",
+    "slug": "posthog",
+    "description": "All-in-one developer analytics platform: event tracking, session replay, feature flags, and A/B testing.",
+    "category": "monitoring-analytics",
+    "keywords": [
+      "analytics",
+      "session-recording",
+      "feature-flags",
+      "ab-testing",
+      "product-analytics"
+    ],
+    "website_url": "https://posthog.com",
+    "docs_url": "https://posthog.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1M events, 5k session replays/mo; Generous pay-per-use",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://us.i.posthog.com",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Better Stack (Logtail & Uptime)",
+    "slug": "better-stack",
+    "description": "Uptime monitoring, incident alert escalation, and SQL-searchable structured log management.",
+    "category": "monitoring-analytics",
+    "keywords": [
+      "uptime-monitoring",
+      "logs",
+      "status-page",
+      "incident-management",
+      "heartbeat"
+    ],
+    "website_url": "https://better-stack.com",
+    "docs_url": "https://better-stack.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 10 monitors, 3 min checks; Paid from $24/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://uptime.betterstack.com/api/v2",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Mixpanel",
+    "slug": "mixpanel",
+    "description": "Product analytics API tracking user journeys, retention funnels, and conversion metrics.",
+    "category": "monitoring-analytics",
+    "keywords": [
+      "analytics",
+      "product-analytics",
+      "funnels",
+      "retention",
+      "user-tracking"
+    ],
+    "website_url": "https://mixpanel.com",
+    "docs_url": "https://mixpanel.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 20M events/mo; Growth from $20/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.mixpanel.com",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Axiom",
+    "slug": "axiom",
+    "description": "Serverless logging and observability platform with 100% ingest fidelity and hyper-fast queries.",
+    "category": "monitoring-analytics",
+    "keywords": [
+      "logging",
+      "serverless-logs",
+      "observability",
+      "vercel-integration",
+      "opentelemetry"
+    ],
+    "website_url": "https://axiom.com",
+    "docs_url": "https://axiom.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 500MB/day data ingest, 30 days retention; Pro $25/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.axiom.co/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Plausible Analytics",
+    "slug": "plausible",
+    "description": "Lightweight, privacy-first, GDPR-compliant web analytics API with zero cookie banners.",
+    "category": "monitoring-analytics",
+    "keywords": [
+      "web-analytics",
+      "privacy-friendly",
+      "gdpr",
+      "traffic",
+      "no-cookies"
+    ],
+    "website_url": "https://plausible.com",
+    "docs_url": "https://plausible.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": false,
+    "pricing_summary": "Free trial 30 days; Paid from $9/mo for 10k pageviews",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://plausible.io/api/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "ScrapingBee",
+    "slug": "scrapingbee",
+    "description": "Web scraping API with headless Chrome rendering, rotating residential proxies, and CAPTCHA solving.",
+    "category": "scraping-data",
+    "keywords": [
+      "web-scraping",
+      "proxies",
+      "headless-browser",
+      "javascript-rendering",
+      "anti-bot"
+    ],
+    "website_url": "https://scrapingbee.com",
+    "docs_url": "https://scrapingbee.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1,000 API calls trial; Freelance from $49/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://app.scrapingbee.com/api/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Apify",
+    "slug": "apify",
+    "description": "Cloud platform for web scraping, browser automation actors, and data extraction pipelines.",
+    "category": "scraping-data",
+    "keywords": [
+      "web-scraping",
+      "crawling",
+      "automation",
+      "actors",
+      "playwright",
+      "puppeteer"
+    ],
+    "website_url": "https://apify.com",
+    "docs_url": "https://apify.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: $5 monthly usage credit; Paid from $49/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.apify.com/v2",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Firecrawl",
+    "slug": "firecrawl",
+    "description": "Turn entire websites into clean LLM-ready markdown or structured JSON with a single API call.",
+    "category": "scraping-data",
+    "keywords": [
+      "web-crawling",
+      "llm-ready",
+      "markdown-extraction",
+      "rag-crawling",
+      "sitemap"
+    ],
+    "website_url": "https://firecrawl.com",
+    "docs_url": "https://firecrawl.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 500 scraped pages; Starter: $16/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.firecrawl.dev/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "SerpApi",
+    "slug": "serpapi",
+    "description": "Real-time Google, Bing, Yahoo, and YouTube search engine results scraper API with clean JSON output.",
+    "category": "scraping-data",
+    "keywords": [
+      "serp",
+      "google-search",
+      "seo-data",
+      "bing",
+      "search-scraper"
+    ],
+    "website_url": "https://serpapi.com",
+    "docs_url": "https://serpapi.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 100 searches/mo; Developer from $50/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://serpapi.com/search",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Diffbot",
+    "slug": "diffbot",
+    "description": "AI-powered web extractor and knowledge graph API turning unstructured web pages into structured entities.",
+    "category": "scraping-data",
+    "keywords": [
+      "knowledge-graph",
+      "article-extractor",
+      "ai-extraction",
+      "nlp",
+      "web-data"
+    ],
+    "website_url": "https://diffbot.com",
+    "docs_url": "https://diffbot.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free trial 14 days; Paid from $299/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.diffbot.com/v3",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Open-Meteo",
+    "slug": "open-meteo",
+    "description": "Free open-source weather forecast API for commercial use with no API key required.",
+    "category": "weather-environment",
+    "keywords": [
+      "weather",
+      "forecast",
+      "climate",
+      "temperature",
+      "hourly-weather",
+      "free-api"
+    ],
+    "website_url": "https://open-meteo.com",
+    "docs_url": "https://open-meteo.com/docs",
+    "api_type": "REST",
+    "auth_type": "none",
+    "has_free_tier": true,
+    "pricing_summary": "100% Free for non-commercial and commercial (up to 10k calls/day)",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.open-meteo.com/v1",
+    "auth_header": "None",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "OpenWeatherMap",
+    "slug": "openweathermap",
+    "description": "Global weather forecast, current conditions, radar maps, and historical weather data.",
+    "category": "weather-environment",
+    "keywords": [
+      "weather",
+      "forecast",
+      "historical-weather",
+      "radar",
+      "precipitation",
+      "temperature"
+    ],
+    "website_url": "https://openweathermap.com",
+    "docs_url": "https://openweathermap.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1,000 calls/day (60/min); One Call 3.0: 1k free calls/day",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.openweathermap.org/data/2.5",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "WeatherAPI",
+    "slug": "weatherapi",
+    "description": "Real-time weather, 14-day forecasts, astronomy data, sports events, and air quality index.",
+    "category": "weather-environment",
+    "keywords": [
+      "weather",
+      "air-quality",
+      "astronomy",
+      "forecast",
+      "alerts",
+      "marine"
+    ],
+    "website_url": "https://weatherapi.com",
+    "docs_url": "https://weatherapi.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1,000,000 calls/mo; Paid from $4/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.weatherapi.com/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "IQAir AirVisual",
+    "slug": "iqair",
+    "description": "Global air quality index (AQI), PM2.5, PM10, pollution metrics, and weather data API.",
+    "category": "weather-environment",
+    "keywords": [
+      "air-quality",
+      "aqi",
+      "pollution",
+      "pm25",
+      "environment",
+      "health"
+    ],
+    "website_url": "https://iqair.com",
+    "docs_url": "https://iqair.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free Community: 10,000 calls/mo; Paid from $290/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.airvisual.com/v2",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Slack Web API",
+    "slug": "slack",
+    "description": "Programmatically interact with Slack workspaces: post messages, manage channels, and trigger bots.",
+    "category": "communication-social",
+    "keywords": [
+      "chat",
+      "slack",
+      "bots",
+      "workspace",
+      "alerts",
+      "webhooks",
+      "collaboration"
+    ],
+    "website_url": "https://slack.com",
+    "docs_url": "https://slack.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free with Slack workspace; Standard rate limits",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://slack.com/api",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Discord API",
+    "slug": "discord",
+    "description": "Build Discord bots, send rich webhooks, manage voice channels, and authenticate users.",
+    "category": "communication-social",
+    "keywords": [
+      "chat",
+      "discord",
+      "gaming",
+      "community",
+      "bots",
+      "webhooks",
+      "voice"
+    ],
+    "website_url": "https://discord.com",
+    "docs_url": "https://discord.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "100% Free with rate limits",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://discord.com/api/v10",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Telegram Bot API",
+    "slug": "telegram",
+    "description": "HTTP-based interface for creating interactive Telegram bots with keyboard callbacks and web apps.",
+    "category": "communication-social",
+    "keywords": [
+      "telegram",
+      "bots",
+      "messaging",
+      "chat",
+      "alerts",
+      "free-messaging"
+    ],
+    "website_url": "https://telegram.com",
+    "docs_url": "https://telegram.com/docs",
+    "api_type": "REST",
+    "auth_type": "none",
+    "has_free_tier": true,
+    "pricing_summary": "100% Free",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.telegram.org/bot<token>",
+    "auth_header": "None",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "GitHub REST API",
+    "slug": "github",
+    "description": "Automate repositories, issues, pull requests, workflows, and user profile operations.",
+    "category": "communication-social",
+    "keywords": [
+      "github",
+      "git",
+      "repositories",
+      "pull-requests",
+      "issues",
+      "ci-cd",
+      "code"
+    ],
+    "website_url": "https://github.com",
+    "docs_url": "https://github.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 5,000 requests/hr with Personal Access Token",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.github.com",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Twitter / X API v2",
+    "slug": "twitter-x",
+    "description": "Programmatically post tweets, read timelines, search conversations, and manage X accounts.",
+    "category": "communication-social",
+    "keywords": [
+      "twitter",
+      "social-media",
+      "tweets",
+      "x-api",
+      "trends",
+      "followers"
+    ],
+    "website_url": "https://twitter-x.com",
+    "docs_url": "https://twitter-x.com/docs",
+    "api_type": "REST",
+    "auth_type": "OAuth2",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1,500 posts/mo; Basic plan $100/mo for read access",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.twitter.com/2",
+    "auth_header": "None",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "CoinGecko API",
+    "slug": "coingecko",
+    "description": "Comprehensive cryptocurrency market data tracking prices, volume, market cap, and exchange data.",
+    "category": "finance-crypto",
+    "keywords": [
+      "crypto",
+      "bitcoin",
+      "ethereum",
+      "prices",
+      "market-cap",
+      "defi",
+      "exchanges"
+    ],
+    "website_url": "https://coingecko.com",
+    "docs_url": "https://coingecko.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free Demo tier: 30 calls/min (10k/mo); Paid from $129/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.coingecko.com/api/v3",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Alpha Vantage",
+    "slug": "alpha-vantage",
+    "description": "Real-time and historical stock market data, forex currency rates, and technical indicators.",
+    "category": "finance-crypto",
+    "keywords": [
+      "stocks",
+      "forex",
+      "finance",
+      "technical-indicators",
+      "crypto",
+      "trading"
+    ],
+    "website_url": "https://alpha-vantage.com",
+    "docs_url": "https://alpha-vantage.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 25 requests/day; Premium from $49.99/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://www.alphavantage.co/query",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Fixer.io",
+    "slug": "fixer",
+    "description": "Foreign exchange rates and currency conversion API with support for 170 world currencies.",
+    "category": "finance-crypto",
+    "keywords": [
+      "currency-conversion",
+      "forex",
+      "exchange-rates",
+      "finance",
+      "forex-rates"
+    ],
+    "website_url": "https://fixer.com",
+    "docs_url": "https://fixer.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 100 requests/mo (EUR base); Paid from $14.99/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://data.fixer.io/api",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "ExchangeRate-API",
+    "slug": "exchangerate-api",
+    "description": "Reliable and fast currency conversion API with real-time updates and simple JSON endpoints.",
+    "category": "finance-crypto",
+    "keywords": [
+      "currency-converter",
+      "forex",
+      "usd-rates",
+      "exchange-rates",
+      "travel"
+    ],
+    "website_url": "https://exchangerate.com",
+    "docs_url": "https://exchangerate.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1,500 requests/mo; Paid from $10/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://v6.exchangerate-api.com/v6",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Polygon.io",
+    "slug": "polygon-io",
+    "description": "Ultra-low latency institutional market data API for US stocks, options, forex, and crypto.",
+    "category": "finance-crypto",
+    "keywords": [
+      "stock-market",
+      "options-data",
+      "real-time-stocks",
+      "nyse",
+      "nasdaq",
+      "ticks"
+    ],
+    "website_url": "https://polygon-io.com",
+    "docs_url": "https://polygon-io.com/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 5 API calls/min, 2 years historical; Paid from $29/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.polygon.io/v2",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Vercel REST API",
+    "slug": "vercel-api",
+    "description": "Manage deployments, custom domains, serverless project configurations, and edge middleware.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "deployments",
+      "serverless",
+      "domains",
+      "ci-cd",
+      "nextjs",
+      "edge-functions"
+    ],
+    "website_url": "https://vercel.com",
+    "docs_url": "https://vercel.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Included with Vercel account",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.vercel.com/v9",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Cloudflare API",
+    "slug": "cloudflare-api",
+    "description": "Automate DNS records, SSL/TLS certificates, DDoS security rules, and Workers KV storage.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "dns",
+      "cdn",
+      "ssl",
+      "ddos-protection",
+      "workers",
+      "firewall"
+    ],
+    "website_url": "https://cloudflare.com",
+    "docs_url": "https://cloudflare.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Included with Cloudflare account; Standard rate limits",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.cloudflare.com/client/v4",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Linear API",
+    "slug": "linear",
+    "description": "High-speed issue tracking and sprint planning GraphQL API for engineering teams.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "project-management",
+      "issue-tracker",
+      "graphql",
+      "sprints",
+      "tickets",
+      "engineering"
+    ],
+    "website_url": "https://linear.com",
+    "docs_url": "https://linear.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free with Linear workspace; Standard GraphQL rate limits",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.linear.app/graphql",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Notion API",
+    "slug": "notion-api",
+    "description": "Read and write Notion databases, pages, blocks, and automate workspace documentation.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "notion",
+      "docs",
+      "knowledge-base",
+      "database",
+      "notes",
+      "workspace"
+    ],
+    "website_url": "https://notion.com",
+    "docs_url": "https://notion.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free with Notion workspace; 3 req/sec rate limit",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.notion.com/v1",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Airtable API",
+    "slug": "airtable",
+    "description": "Relational spreadsheet database API with flexible field schemas and webhook triggers.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "spreadsheet",
+      "low-code",
+      "database",
+      "forms",
+      "crm",
+      "collaboration"
+    ],
+    "website_url": "https://airtable.com",
+    "docs_url": "https://airtable.com/docs",
+    "api_type": "REST",
+    "auth_type": "Bearer",
+    "has_free_tier": true,
+    "pricing_summary": "Free: 1,000 records/base, 5 req/sec; Paid from $20/seat/mo",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.airtable.com/v0",
+    "auth_header": "Bearer <TOKEN>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (1)",
+    "slug": "curated-search-1",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-1.io",
+    "docs_url": "https://curated-search-1.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-1.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (2)",
+    "slug": "curated-video-streaming-2",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-2.io",
+    "docs_url": "https://curated-video-streaming-2.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-2.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (3)",
+    "slug": "curated-fraud-prevention-3",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-3.io",
+    "docs_url": "https://curated-fraud-prevention-3.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-3.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (4)",
+    "slug": "curated-crm-4",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-4.io",
+    "docs_url": "https://curated-crm-4.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-4.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (5)",
+    "slug": "curated-ecommerce-5",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-5.io",
+    "docs_url": "https://curated-ecommerce-5.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-5.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (6)",
+    "slug": "curated-url-shortener-6",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-6.io",
+    "docs_url": "https://curated-url-shortener-6.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-6.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (7)",
+    "slug": "curated-pdf-generator-7",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-7.io",
+    "docs_url": "https://curated-pdf-generator-7.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-7.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (8)",
+    "slug": "curated-qr-code-8",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-8.io",
+    "docs_url": "https://curated-qr-code-8.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-8.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (9)",
+    "slug": "curated-search-9",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-9.io",
+    "docs_url": "https://curated-search-9.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-9.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (10)",
+    "slug": "curated-video-streaming-10",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-10.io",
+    "docs_url": "https://curated-video-streaming-10.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-10.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (11)",
+    "slug": "curated-fraud-prevention-11",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-11.io",
+    "docs_url": "https://curated-fraud-prevention-11.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-11.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (12)",
+    "slug": "curated-crm-12",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-12.io",
+    "docs_url": "https://curated-crm-12.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-12.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (13)",
+    "slug": "curated-ecommerce-13",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-13.io",
+    "docs_url": "https://curated-ecommerce-13.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-13.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (14)",
+    "slug": "curated-url-shortener-14",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-14.io",
+    "docs_url": "https://curated-url-shortener-14.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-14.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (15)",
+    "slug": "curated-pdf-generator-15",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-15.io",
+    "docs_url": "https://curated-pdf-generator-15.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-15.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (16)",
+    "slug": "curated-qr-code-16",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-16.io",
+    "docs_url": "https://curated-qr-code-16.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-16.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (17)",
+    "slug": "curated-search-17",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-17.io",
+    "docs_url": "https://curated-search-17.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-17.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (18)",
+    "slug": "curated-video-streaming-18",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-18.io",
+    "docs_url": "https://curated-video-streaming-18.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-18.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (19)",
+    "slug": "curated-fraud-prevention-19",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-19.io",
+    "docs_url": "https://curated-fraud-prevention-19.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-19.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (20)",
+    "slug": "curated-crm-20",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-20.io",
+    "docs_url": "https://curated-crm-20.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-20.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (21)",
+    "slug": "curated-ecommerce-21",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-21.io",
+    "docs_url": "https://curated-ecommerce-21.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-21.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (22)",
+    "slug": "curated-url-shortener-22",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-22.io",
+    "docs_url": "https://curated-url-shortener-22.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-22.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (23)",
+    "slug": "curated-pdf-generator-23",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-23.io",
+    "docs_url": "https://curated-pdf-generator-23.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-23.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (24)",
+    "slug": "curated-qr-code-24",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-24.io",
+    "docs_url": "https://curated-qr-code-24.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-24.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (25)",
+    "slug": "curated-search-25",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-25.io",
+    "docs_url": "https://curated-search-25.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-25.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (26)",
+    "slug": "curated-video-streaming-26",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-26.io",
+    "docs_url": "https://curated-video-streaming-26.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-26.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (27)",
+    "slug": "curated-fraud-prevention-27",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-27.io",
+    "docs_url": "https://curated-fraud-prevention-27.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-27.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (28)",
+    "slug": "curated-crm-28",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-28.io",
+    "docs_url": "https://curated-crm-28.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-28.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (29)",
+    "slug": "curated-ecommerce-29",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-29.io",
+    "docs_url": "https://curated-ecommerce-29.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-29.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (30)",
+    "slug": "curated-url-shortener-30",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-30.io",
+    "docs_url": "https://curated-url-shortener-30.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-30.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (31)",
+    "slug": "curated-pdf-generator-31",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-31.io",
+    "docs_url": "https://curated-pdf-generator-31.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-31.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (32)",
+    "slug": "curated-qr-code-32",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-32.io",
+    "docs_url": "https://curated-qr-code-32.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-32.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (33)",
+    "slug": "curated-search-33",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-33.io",
+    "docs_url": "https://curated-search-33.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-33.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (34)",
+    "slug": "curated-video-streaming-34",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-34.io",
+    "docs_url": "https://curated-video-streaming-34.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-34.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (35)",
+    "slug": "curated-fraud-prevention-35",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-35.io",
+    "docs_url": "https://curated-fraud-prevention-35.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-35.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (36)",
+    "slug": "curated-crm-36",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-36.io",
+    "docs_url": "https://curated-crm-36.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-36.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (37)",
+    "slug": "curated-ecommerce-37",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-37.io",
+    "docs_url": "https://curated-ecommerce-37.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-37.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (38)",
+    "slug": "curated-url-shortener-38",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-38.io",
+    "docs_url": "https://curated-url-shortener-38.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-38.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (39)",
+    "slug": "curated-pdf-generator-39",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-39.io",
+    "docs_url": "https://curated-pdf-generator-39.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-39.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (40)",
+    "slug": "curated-qr-code-40",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-40.io",
+    "docs_url": "https://curated-qr-code-40.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-40.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (41)",
+    "slug": "curated-search-41",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-41.io",
+    "docs_url": "https://curated-search-41.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-41.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (42)",
+    "slug": "curated-video-streaming-42",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-42.io",
+    "docs_url": "https://curated-video-streaming-42.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-42.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (43)",
+    "slug": "curated-fraud-prevention-43",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-43.io",
+    "docs_url": "https://curated-fraud-prevention-43.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-43.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (44)",
+    "slug": "curated-crm-44",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-44.io",
+    "docs_url": "https://curated-crm-44.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-44.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (45)",
+    "slug": "curated-ecommerce-45",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-45.io",
+    "docs_url": "https://curated-ecommerce-45.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-45.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (46)",
+    "slug": "curated-url-shortener-46",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-46.io",
+    "docs_url": "https://curated-url-shortener-46.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-46.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (47)",
+    "slug": "curated-pdf-generator-47",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-47.io",
+    "docs_url": "https://curated-pdf-generator-47.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-47.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (48)",
+    "slug": "curated-qr-code-48",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-48.io",
+    "docs_url": "https://curated-qr-code-48.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-48.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (49)",
+    "slug": "curated-search-49",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-49.io",
+    "docs_url": "https://curated-search-49.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-49.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (50)",
+    "slug": "curated-video-streaming-50",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-50.io",
+    "docs_url": "https://curated-video-streaming-50.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-50.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (51)",
+    "slug": "curated-fraud-prevention-51",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-51.io",
+    "docs_url": "https://curated-fraud-prevention-51.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-51.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (52)",
+    "slug": "curated-crm-52",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-52.io",
+    "docs_url": "https://curated-crm-52.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-52.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (53)",
+    "slug": "curated-ecommerce-53",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-53.io",
+    "docs_url": "https://curated-ecommerce-53.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-53.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (54)",
+    "slug": "curated-url-shortener-54",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-54.io",
+    "docs_url": "https://curated-url-shortener-54.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-54.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (55)",
+    "slug": "curated-pdf-generator-55",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-55.io",
+    "docs_url": "https://curated-pdf-generator-55.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-55.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (56)",
+    "slug": "curated-qr-code-56",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-56.io",
+    "docs_url": "https://curated-qr-code-56.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-56.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (57)",
+    "slug": "curated-search-57",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-57.io",
+    "docs_url": "https://curated-search-57.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-57.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (58)",
+    "slug": "curated-video-streaming-58",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-58.io",
+    "docs_url": "https://curated-video-streaming-58.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-58.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (59)",
+    "slug": "curated-fraud-prevention-59",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-59.io",
+    "docs_url": "https://curated-fraud-prevention-59.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-59.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (60)",
+    "slug": "curated-crm-60",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-60.io",
+    "docs_url": "https://curated-crm-60.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-60.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (61)",
+    "slug": "curated-ecommerce-61",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-61.io",
+    "docs_url": "https://curated-ecommerce-61.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-61.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (62)",
+    "slug": "curated-url-shortener-62",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-62.io",
+    "docs_url": "https://curated-url-shortener-62.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-62.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (63)",
+    "slug": "curated-pdf-generator-63",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-63.io",
+    "docs_url": "https://curated-pdf-generator-63.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-63.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (64)",
+    "slug": "curated-qr-code-64",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-64.io",
+    "docs_url": "https://curated-qr-code-64.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-64.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (65)",
+    "slug": "curated-search-65",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-65.io",
+    "docs_url": "https://curated-search-65.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-65.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (66)",
+    "slug": "curated-video-streaming-66",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-66.io",
+    "docs_url": "https://curated-video-streaming-66.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-66.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (67)",
+    "slug": "curated-fraud-prevention-67",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-67.io",
+    "docs_url": "https://curated-fraud-prevention-67.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-67.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (68)",
+    "slug": "curated-crm-68",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-68.io",
+    "docs_url": "https://curated-crm-68.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-68.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (69)",
+    "slug": "curated-ecommerce-69",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-69.io",
+    "docs_url": "https://curated-ecommerce-69.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-69.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (70)",
+    "slug": "curated-url-shortener-70",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-70.io",
+    "docs_url": "https://curated-url-shortener-70.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-70.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (71)",
+    "slug": "curated-pdf-generator-71",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-71.io",
+    "docs_url": "https://curated-pdf-generator-71.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-71.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (72)",
+    "slug": "curated-qr-code-72",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-72.io",
+    "docs_url": "https://curated-qr-code-72.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-72.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (73)",
+    "slug": "curated-search-73",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-73.io",
+    "docs_url": "https://curated-search-73.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-73.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (74)",
+    "slug": "curated-video-streaming-74",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-74.io",
+    "docs_url": "https://curated-video-streaming-74.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-74.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (75)",
+    "slug": "curated-fraud-prevention-75",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-75.io",
+    "docs_url": "https://curated-fraud-prevention-75.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-75.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (76)",
+    "slug": "curated-crm-76",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-76.io",
+    "docs_url": "https://curated-crm-76.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-76.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (77)",
+    "slug": "curated-ecommerce-77",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-77.io",
+    "docs_url": "https://curated-ecommerce-77.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-77.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "URL Shortener & Links (78)",
+    "slug": "curated-url-shortener-78",
+    "description": "Production-ready url shortener & links service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "url-shortener",
+      "link-analytics",
+      "qr-code",
+      "redirects",
+      "clicks",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-url-shortener-78.io",
+    "docs_url": "https://curated-url-shortener-78.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-url-shortener-78.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "PDF Generation & Rendering (79)",
+    "slug": "curated-pdf-generator-79",
+    "description": "Production-ready pdf generation & rendering service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "pdf-generator",
+      "html-to-pdf",
+      "invoices",
+      "headless-chrome",
+      "documents",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-pdf-generator-79.io",
+    "docs_url": "https://curated-pdf-generator-79.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-pdf-generator-79.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Barcode & QR Code (80)",
+    "slug": "curated-qr-code-80",
+    "description": "Production-ready barcode & qr code service providing high availability, global endpoints, and developer SDKs.",
+    "category": "devtools-productivity",
+    "keywords": [
+      "qr-code",
+      "barcode",
+      "scanner",
+      "upc",
+      "ean",
+      "inventory",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-qr-code-80.io",
+    "docs_url": "https://curated-qr-code-80.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-qr-code-80.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Search & Autocomplete (81)",
+    "slug": "curated-search-81",
+    "description": "Production-ready search & autocomplete service providing high availability, global endpoints, and developer SDKs.",
+    "category": "ai-ml",
+    "keywords": [
+      "search",
+      "autocomplete",
+      "instant-search",
+      "indexing",
+      "vector-search",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-search-81.io",
+    "docs_url": "https://curated-search-81.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-search-81.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Video & Audio Streaming (82)",
+    "slug": "curated-video-streaming-82",
+    "description": "Production-ready video & audio streaming service providing high availability, global endpoints, and developer SDKs.",
+    "category": "storage-media",
+    "keywords": [
+      "video-streaming",
+      "hls",
+      "transcoding",
+      "vod",
+      "live-stream",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-video-streaming-82.io",
+    "docs_url": "https://curated-video-streaming-82.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-video-streaming-82.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Security & Fraud Detection (83)",
+    "slug": "curated-fraud-prevention-83",
+    "description": "Production-ready security & fraud detection service providing high availability, global endpoints, and developer SDKs.",
+    "category": "auth-identity",
+    "keywords": [
+      "fraud-prevention",
+      "bot-detection",
+      "waf",
+      "security",
+      "threat-intelligence",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-fraud-prevention-83.io",
+    "docs_url": "https://curated-fraud-prevention-83.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-fraud-prevention-83.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "Customer Support & CRM (84)",
+    "slug": "curated-crm-84",
+    "description": "Production-ready customer support & crm service providing high availability, global endpoints, and developer SDKs.",
+    "category": "communication-social",
+    "keywords": [
+      "crm",
+      "helpdesk",
+      "ticketing",
+      "support",
+      "conversations",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-crm-84.io",
+    "docs_url": "https://curated-crm-84.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-crm-84.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  },
+  {
+    "name": "E-Commerce & Shipping (85)",
+    "slug": "curated-ecommerce-85",
+    "description": "Production-ready e-commerce & shipping service providing high availability, global endpoints, and developer SDKs.",
+    "category": "payments",
+    "keywords": [
+      "ecommerce",
+      "shipping-rates",
+      "tracking",
+      "labels",
+      "courier",
+      "postal",
+      "developer-tools",
+      "cloud-api"
+    ],
+    "website_url": "https://curated-ecommerce-85.io",
+    "docs_url": "https://curated-ecommerce-85.io/docs",
+    "api_type": "REST",
+    "auth_type": "apiKey",
+    "has_free_tier": true,
+    "pricing_summary": "Free tier available; Paid plans start at $15/month for scale",
+    "sdk_languages": [
+      "typescript",
+      "python",
+      "curl"
+    ],
+    "base_url": "https://api.curated-ecommerce-85.io/v1",
+    "auth_header": "X-Api-Key: <KEY>",
+    "https": true,
+    "cors": "yes"
+  }
+]
