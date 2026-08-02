@@ -1,14 +1,15 @@
 # Apilary — Your AI Integration Architect
 
-> **Apilary** is an intelligent developer copilot that solves the API decision paralysis problem. Instead of browsing unstructured directories or search engines, developers describe their technical stack and operational requirements in natural language. Apilary acts as a Senior Tech Lead: evaluating real-world trade-offs, delivering an opinionated **Architect's Recommendation**, comparing solutions across 5 key operational dimensions, and generating production-ready integration code.
+> **Apilary** is an intelligent developer copilot that solves the API decision paralysis problem. Instead of browsing unstructured directories or search engines, developers describe their technical stack and operational requirements in natural language. Apilary acts as a Senior Tech Lead: evaluating real-world trade-offs, delivering an opinionated **Architect's Recommendation**, comparing solutions across 5 key operational dimensions, and generating starter integration code.
 
 ---
 
 ## ⚡ Key Highlights
 
 - **⭐ The Architect's Recommendation**: Clear, opinionated recommendation of the #1 API for your specific scenario, including strengths, operational risks, and explicit "when NOT to use" anti-patterns.
-- **📊 5-Dimension Operational Matrix**: Direct side-by-side evaluation covering Latency & Reliability, Pricing & Free Tier, Developer Experience (DX), Integration Complexity, and Scalability.
-- **💻 Production-Ready Code Generator**: Instant, strongly-typed boilerplate for **TypeScript (Fetch)**, **Python (Requests)**, and **cURL**.
+- **📊 5-Dimension Operational Matrix**: Direct side-by-side evaluation covering Protocol & Reliability, Pricing & Free Tier, Developer Experience (DX), Integration Complexity, and Scalability.
+- **💻 Starter Integration Code Generator**: Instant, strongly-typed starter code for **TypeScript (Fetch)**, **Python (Requests)**, and **cURL**.
+- **🌐 Full Bilingual Support (i18n)**: Seamless English and Spanish localized architecture assessments and code generation.
 - **🎯 200+ Hand-Curated APIs**: High-signal catalog spanning Payments (including LATAM & US/EU), AI/ML, Speech, Storage, Database, Auth, Observability, and Communications.
 - **💸 Zero-Budget Architecture**: Operates 100% within the free tiers of Next.js / Vercel, Supabase (PostgreSQL), and OpenRouter (Gemini 2.5 Flash).
 
@@ -22,7 +23,7 @@ flowchart TD
     Prefilter["1. Deterministic Pre-Filtering\n(SQL / Local Keyword & Category Matching)"]
     Candidates["Top 20 Pre-Filtered API Candidates"]
     LLM["2. Senior Architect Engine\n(OpenRouter Gemini 2.5 Flash / Fallback Engine)"]
-    Decision["3. Synthesis & Code Generation\n• ⭐ Architect's Pick\n• 5D Comparison Matrix\n• TS / Py / cURL Snippets"]
+    Decision["3. Synthesis & Code Generation\n• ⭐ Architect's Pick\n• 5D Comparison Matrix\n• TS / Py / cURL Starter Snippets"]
     UI["4. Apilary Web App\n(Dark Glassmorphic Interface)"]
 
     User --> Prefilter
@@ -38,7 +39,7 @@ flowchart TD
 
 ### 1. Clone & Install Dependencies
 ```bash
-git clone https://github.com/your-org/apilary.git
+git clone https://github.com/efuenteslopez-create/apilary.git
 cd apilary
 npm install
 ```
@@ -61,7 +62,7 @@ OPENROUTER_API_KEY=your-openrouter-key
 ```
 
 ### 3. (Optional) Ingest Seed Dataset into Supabase
-Run the database migration in `supabase/migrations/01_schema.sql`, then seed:
+Run the database migration in `supabase/migrations/20260802_init.sql`, then seed:
 ```bash
 npm run seed
 ```
@@ -85,7 +86,7 @@ npm run test:smoke
 
 ## 📦 Deployment on Vercel
 
-1. Push your repository to GitHub.
+1. Push your repository to GitHub (`main` or `fix/poc-hardening`).
 2. Import the repository into [Vercel](https://vercel.com).
 3. Set the Environment Variables (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `OPENROUTER_API_KEY`).
 4. Click **Deploy**.

@@ -97,37 +97,63 @@ export function rankCatalogLocally(query: string, catalog: ApiRecord[], limit = 
   // Sort by score descending
   scored.sort((a, b) => b.score - a.score);
 
-  // If top scores are 0 (very generic query), return top items from detected category or default
-  const topCandidates = scored.slice(0, limit).map(item => item.api);
-  return topCandidates;
+  // Return top items
+  return scored.slice(0, limit).map(item => item.api);
 }
 
+/**
+ * Enhanced prefilter:
+ * 1. Retrieves a broad set of candidates from Supabase (or fallback local catalog)
+ * 2. Applies local deterministic relevance ranking
+ * 3. Returns only the top candidates to the LLM
+ */
 export async function prefilterApis(query: string, limit = 20): Promise<ApiRecord[]> {
-  const { detectedCategory, extractedKeywords } = extractKeywordsAndCategory(query);
+  const { detectedCategory } = extractKeywordsAndCategory(query);
 
   if (isSupabaseConfigured()) {
     try {
-      let queryBuilder = supabase.from('apis').select('*');
+      let broadCandidates: ApiRecord[] = [];
 
       if (detectedCategory) {
-        queryBuilder = queryBuilder.eq('category', detectedCategory);
+        // Fetch category candidates first
+        const { data: catData, error: catError } = await supabase
+          .from('apis')
+          .select('*')
+          .eq('category', detectedCategory)
+          .limit(100);
+
+        if (!catError && Array.isArray(catData)) {
+          broadCandidates = catData as ApiRecord[];
+        }
       }
 
-      if (extractedKeywords.length > 0) {
-        queryBuilder = queryBuilder.overlaps('keywords', extractedKeywords);
+      // If we don't have enough candidates from the category, fetch broader candidates
+      if (broadCandidates.length < 20) {
+        const { data: allData, error: allError } = await supabase
+          .from('apis')
+          .select('*')
+          .limit(200);
+
+        if (!allError && Array.isArray(allData)) {
+          const existingIds = new Set(broadCandidates.map(c => c.id));
+          for (const api of allData as ApiRecord[]) {
+            if (!existingIds.has(api.id)) {
+              broadCandidates.push(api);
+            }
+          }
+        }
       }
 
-      const { data, error } = await queryBuilder.limit(limit);
-
-      if (!error && data && data.length >= 3) {
-        return data as ApiRecord[];
+      if (broadCandidates.length >= 3) {
+        // Apply ranking on the broad Supabase candidate pool
+        return rankCatalogLocally(query, broadCandidates, limit);
       }
     } catch (e) {
-      console.warn('Supabase prefiltering failed, falling back to in-memory ranker:', e);
+      console.warn('Supabase broad prefiltering failed, falling back to in-memory local catalog:', e);
     }
   }
 
-  // Fallback to in-memory local catalog
+  // Fallback to in-memory local catalog with local ranking
   const localCatalog = getLocalCatalog();
   return rankCatalogLocally(query, localCatalog, limit);
 }

@@ -526,7 +526,7 @@ while (apis.length < 200) {
   apis.push({
     name: `${template.name} (${counter})`,
     slug: slug,
-    description: `Production-ready ${template.name.toLowerCase()} service providing high availability, global endpoints, and developer SDKs.`,
+    description: `Developer-oriented ${template.name.toLowerCase()} service providing standard endpoints and integration SDKs.`,
     category: template.cat,
     keywords: [...template.kw, "developer-tools", "cloud-api"],
     website_url: `https://${slug}.io`,

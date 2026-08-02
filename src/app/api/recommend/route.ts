@@ -3,15 +3,50 @@ import { prefilterApis } from '@/lib/prefilter';
 import { queryArchitectLLM } from '@/lib/llm';
 import { supabaseAdmin, isSupabaseConfigured } from '@/lib/supabase';
 
+const MAX_QUERY_LENGTH = 500;
+const MIN_QUERY_LENGTH = 3;
+
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
-    const queryText = (body?.query || '').trim();
-    const locale = (body?.locale === 'es' ? 'es' : 'en') as 'en' | 'es';
-
-    if (!queryText || queryText.length < 3) {
+    let body: Record<string, unknown>;
+    try {
+      body = await req.json();
+    } catch {
       return NextResponse.json(
-        { error: locale === 'es' ? 'Por favor ingresa una consulta válida describiendo tu requerimiento de integración (mínimo 3 caracteres).' : 'Please provide a valid query describing your integration requirement (min 3 characters).' },
+        { error: 'Invalid JSON request payload.' },
+        { status: 400 }
+      );
+    }
+
+    if (!body || typeof body !== 'object') {
+      return NextResponse.json(
+        { error: 'Request body must be a valid JSON object.' },
+        { status: 400 }
+      );
+    }
+
+    const queryRaw = typeof body.query === 'string' ? body.query : '';
+    const queryText = queryRaw.trim();
+    const locale = (body.locale === 'es' ? 'es' : 'en') as 'en' | 'es';
+
+    if (queryText.length < MIN_QUERY_LENGTH) {
+      return NextResponse.json(
+        {
+          error: locale === 'es'
+            ? 'Por favor ingresa una consulta válida describiendo tu requerimiento técnico (mínimo 3 caracteres).'
+            : 'Please provide a valid query describing your technical integration requirement (min 3 characters).'
+        },
+        { status: 400 }
+      );
+    }
+
+    if (queryText.length > MAX_QUERY_LENGTH) {
+      return NextResponse.json(
+        {
+          error: locale === 'es'
+            ? `La consulta excede la longitud máxima permitida de ${MAX_QUERY_LENGTH} caracteres. Por favor sé más conciso.`
+            : `Query exceeds maximum length of ${MAX_QUERY_LENGTH} characters. Please be more concise.`
+        },
         { status: 400 }
       );
     }
@@ -21,7 +56,11 @@ export async function POST(req: NextRequest) {
 
     if (!candidates || candidates.length === 0) {
       return NextResponse.json(
-        { error: locale === 'es' ? 'No se encontraron APIs coincidentes en el catálogo curado. Prueba ampliando tu consulta.' : 'No matching APIs found in the curated catalog. Try broadening your query.' },
+        {
+          error: locale === 'es'
+            ? 'No se encontraron APIs candidatas en el catálogo. Prueba reformulando tu consulta.'
+            : 'No candidate APIs found in the catalog. Try broadening your query.'
+        },
         { status: 404 }
       );
     }
@@ -29,18 +68,25 @@ export async function POST(req: NextRequest) {
     // Step 2: Architect LLM Reasoning & Snippet generation
     const response = await queryArchitectLLM(queryText, candidates, locale);
 
-    // Step 3: Optional async logging to Supabase (non-blocking)
+    // Step 3: Server-side logging to Supabase queries table (Service Role)
     if (isSupabaseConfigured()) {
       (async () => {
         try {
+          // Check if candidate IDs are valid UUIDs for Postgres UUID columns
+          const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+          const candidateUuids = candidates.map(c => c.id).filter(id => uuidRegex.test(id));
+          const recommendedUuids = response.recommendations.map(r => r.api_id).filter(id => uuidRegex.test(id));
+          const architectPickUuid = response.architect_verdict.selected_api_id && uuidRegex.test(response.architect_verdict.selected_api_id)
+            ? response.architect_verdict.selected_api_id
+            : null;
+
           await supabaseAdmin.from('queries').insert({
+            id: response.query_id,
             query_text: queryText,
-            selected_category: candidates[0]?.category,
-            candidate_ids: candidates.map(c => c.id).filter(id => !id.startsWith('local-')),
-            recommended_ids: response.recommendations.map(r => r.api_id).filter(id => !id.startsWith('local-')),
-            architect_pick_id: response.architect_verdict.selected_api_id && !response.architect_verdict.selected_api_id.startsWith('local-')
-              ? response.architect_verdict.selected_api_id
-              : null,
+            selected_category: candidates[0]?.category || null,
+            candidate_ids: candidateUuids.length > 0 ? candidateUuids : null,
+            recommended_ids: recommendedUuids.length > 0 ? recommendedUuids : null,
+            architect_pick_id: architectPickUuid,
             response_payload: response,
             response_time_ms: response.response_time_ms
           });
@@ -53,7 +99,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(response);
   } catch (error: unknown) {
     console.error('Error in /api/recommend:', error);
-    const message = error instanceof Error ? error.message : 'Internal Server Error';
-    return NextResponse.json({ error: message }, { status: 500 });
+    // Safe error message without exposing internal details
+    return NextResponse.json(
+      { error: 'An error occurred while evaluating API recommendations. Please try again.' },
+      { status: 500 }
+    );
   }
 }

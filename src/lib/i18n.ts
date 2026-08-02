@@ -82,7 +82,7 @@ export const translations: Record<Locale, Translations> = {
     },
     hero: {
       title: 'Your AI Integration Architect',
-      subtitle: "Describe what you're building. Apilary evaluates technical trade-offs, delivers the senior architect verdict, and generates production integration code.",
+      subtitle: "Describe what you're building. Apilary evaluates technical trade-offs, delivers the senior architect verdict, and generates starter integration code.",
       placeholder: 'E.g., I need a payment gateway for my SaaS in Chile with recurring direct debit, or an ultra low-latency speech transcription API...',
       ctrlEnterTip: 'to analyze',
       analyzeBtn: 'Get Architect Verdict',
@@ -121,7 +121,7 @@ export const translations: Record<Locale, Translations> = {
     },
     results: {
       title: 'Top Recommended APIs & Integration Snippets',
-      subtitle: 'Production-ready TypeScript, Python, and cURL templates',
+      subtitle: 'Starter TypeScript, Python, and cURL integration templates',
       architecturalFit: 'Architectural Fit',
       pros: 'Pros',
       cons: 'Trade-offs / Cons',
@@ -167,7 +167,7 @@ export const translations: Record<Locale, Translations> = {
     },
     hero: {
       title: 'Tu Arquitecto de Integración IA',
-      subtitle: 'Describe lo que estás construyendo. Apilary evalúa trade-offs técnicos, entrega el veredicto de un Staff Engineer y genera el código de integración listo para producción.',
+      subtitle: 'Describe lo que estás construyendo. Apilary evalúa trade-offs técnicos, entrega el veredicto de un Staff Engineer y genera el código de integración inicial (starter).',
       placeholder: 'Ej: Necesito una pasarela de pago para mi SaaS en Chile con suscripción y débito bancario recurrente (PAC), o una API de transcripción de voz con bajísima latencia...',
       ctrlEnterTip: 'para analizar',
       analyzeBtn: 'Obtener Veredicto de Arquitectura',
@@ -206,7 +206,7 @@ export const translations: Record<Locale, Translations> = {
     },
     results: {
       title: 'APIs Recomendadas y Código de Integración',
-      subtitle: 'Plantillas listas para producción en TypeScript, Python y cURL',
+      subtitle: 'Plantillas de integración inicial en TypeScript, Python y cURL',
       architecturalFit: 'Ajuste de Arquitectura',
       pros: 'Ventajas',
       cons: 'Compromisos / Desventajas',

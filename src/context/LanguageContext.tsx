@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import { Locale, Translations, translations } from '@/lib/i18n';
 
 interface LanguageContextType {
@@ -15,27 +15,21 @@ const LanguageContext = createContext<LanguageContextType>({
   t: translations.es
 });
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>('es');
+function getInitialLocale(): Locale {
+  if (typeof window === 'undefined') return 'es';
+  try {
+    const saved = localStorage.getItem('apilary_lang');
+    if (saved === 'en' || saved === 'es') return saved;
+    const browserLang = navigator.language.toLowerCase();
+    if (browserLang.startsWith('en')) return 'en';
+  } catch {
+    // fallback
+  }
+  return 'es';
+}
 
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem('apilary_lang') as Locale | null;
-      if (saved && (saved === 'en' || saved === 'es')) {
-        setLocaleState(saved);
-      } else {
-        // Check browser language
-        const browserLang = navigator.language.toLowerCase();
-        if (browserLang.startsWith('en')) {
-          setLocaleState('en');
-        } else {
-          setLocaleState('es');
-        }
-      }
-    } catch {
-      // ignore in environments without localStorage
-    }
-  }, []);
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const [locale, setLocaleState] = useState<Locale>(getInitialLocale);
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);

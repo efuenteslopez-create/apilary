@@ -66,17 +66,16 @@ CREATE TABLE IF NOT EXISTS feedback (
 
 CREATE INDEX IF NOT EXISTS idx_feedback_query_id ON feedback(query_id);
 
+-- ═══════════════════════════════════════════════════════════════
 -- RLS POLICIES (Row Level Security)
+-- ═══════════════════════════════════════════════════════════════
 ALTER TABLE apis ENABLE ROW LEVEL SECURITY;
 ALTER TABLE queries ENABLE ROW LEVEL SECURITY;
 ALTER TABLE feedback ENABLE ROW LEVEL SECURITY;
 
--- Allow public read access to apis catalog
+-- apis: Public read-only access for catalog inspection
 CREATE POLICY "Public APIs read access" ON apis FOR SELECT USING (true);
 
--- Allow public insert to queries log
-CREATE POLICY "Public queries insert" ON queries FOR INSERT WITH CHECK (true);
-CREATE POLICY "Public queries select" ON queries FOR SELECT USING (true);
-
--- Allow public insert to feedback
-CREATE POLICY "Public feedback insert" ON feedback FOR INSERT WITH CHECK (true);
+-- queries & feedback: No public SELECT or INSERT policies.
+-- By default with RLS enabled and no policies granted, anon/authenticated users cannot read or write.
+-- All queries logging and feedback writes are performed exclusively by the backend via the Supabase Service Role Key.

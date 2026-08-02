@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Apilary — Your AI Integration Architect",
-  description: "Describe what you're building. Apilary analyzes technical trade-offs, recommends the top APIs, provides the architect verdict, and generates production integration code.",
+  description: "Describe what you're building. Apilary analyzes technical trade-offs, recommends the top APIs, provides the architect verdict, and generates starter integration code.",
   keywords: ["api recommendation", "software architecture", "api matcher", "developer tools", "integration code", "system design", "arquitectura de software", "integración de apis"],
   authors: [{ name: "Apilary" }],
   openGraph: {
