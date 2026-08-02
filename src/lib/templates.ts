@@ -55,7 +55,7 @@ export function generateTypeScriptSnippet(api: ApiRecord, customVars?: Partial<C
   const isPost = vars.http_method === 'POST';
 
   return `// Integration: ${api.name} (${api.category})
-// Production-ready TypeScript implementation with strong typing
+// Starter TypeScript integration code with strong typing
 
 ${vars.type_definitions}
 
@@ -81,7 +81,7 @@ export function generatePythonSnippet(api: ApiRecord, customVars?: Partial<CodeV
   const isPost = vars.http_method === 'POST';
 
   return `# Integration: ${api.name} (${api.category})
-# Production-ready Python client using requests
+# Starter Python integration client using requests
 import os
 import requests
 from typing import Dict, Any, Optional

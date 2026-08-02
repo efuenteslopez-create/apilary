@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function Header() {
@@ -23,7 +24,7 @@ export default function Header() {
     }}>
       {/* Brand & Badge */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.875rem' }}>
-        <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', textDecoration: 'none' }}>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', textDecoration: 'none' }}>
           <div style={{
             width: '32px',
             height: '32px',
@@ -49,7 +50,7 @@ export default function Header() {
           }}>
             Apilary
           </span>
-        </a>
+        </Link>
 
         <div style={{
           display: 'inline-flex',

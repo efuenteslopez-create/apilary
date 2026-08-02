@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
+    "generate:dataset": "tsx scripts/generate-dataset.ts",
     "seed": "tsx scripts/seed.ts",
     "test:smoke": "tsx scripts/smoke-test.ts"
   },
