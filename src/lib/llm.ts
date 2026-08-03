@@ -3,7 +3,7 @@ import { renderAllSnippets } from './templates';
 
 const OPENROUTER_ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
 const MODEL_NAME = 'google/gemini-2.5-flash';
-const REQUEST_TIMEOUT_MS = 12000;
+const REQUEST_TIMEOUT_MS = 30000;
 
 interface LLMOutputSchema {
   understanding?: string;
