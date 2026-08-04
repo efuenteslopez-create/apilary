@@ -73,6 +73,27 @@ const SMOKE_TEST_CASES = [
     query: 'Tracking de errores, métricas de rendimiento y monitoreo de producción',
     locale: 'es' as const,
     expectedKeywords: ['sentry', 'posthog', 'better-stack']
+  },
+  {
+    id: 11,
+    title: 'Semantic OCR Relevance',
+    query: 'Necesito una API económica para OCR en español.',
+    locale: 'es' as const,
+    expectedKeywords: ['ocr-space', 'mindee', 'google-cloud-vision']
+  },
+  {
+    id: 12,
+    title: 'Semantic Auth Relevance',
+    query: 'Quiero autenticar usuarios con Google y correo electrónico.',
+    locale: 'es' as const,
+    expectedKeywords: ['firebase-auth', 'auth0', 'clerk']
+  },
+  {
+    id: 13,
+    title: 'Semantic Transcription Relevance',
+    query: 'Necesito transcribir llamadas en español.',
+    locale: 'es' as const,
+    expectedKeywords: ['deepgram', 'assemblyai', 'openai']
   }
 ];
 
