@@ -129,7 +129,7 @@ Output JSON schema:
         ],
         response_format: { type: 'json_object' },
         temperature: 0.2,
-        max_tokens: 1500
+        max_tokens: 3000
       }),
       signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS)
     });
