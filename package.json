@@ -5,11 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:worker": "opennextjs-cloudflare build",
     "start": "next start",
     "lint": "eslint .",
     "generate:dataset": "tsx scripts/generate-dataset.ts",
     "seed": "tsx scripts/seed.ts",
-    "test:smoke": "tsx scripts/smoke-test.ts"
+    "test:smoke": "tsx scripts/smoke-test.ts",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.111.0",
@@ -18,12 +22,14 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.12",
     "tsx": "^4.23.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.118.0"
   }
 }
