@@ -3,12 +3,12 @@ import { supabase, isSupabaseConfigured } from './supabase';
 import { getLocalCatalog } from './catalog-local';
 
 const CATEGORY_MAP: Record<string, string[]> = {
-  payments: ['payment', 'payments', 'pago', 'pagos', 'checkout', 'stripe', 'fintoc', 'transbank', 'mercadopago', 'billing', 'subscription', 'suscripcion', 'tarjeta', 'credit-card', 'a2a', 'transferencia', 'pac', 'mor'],
+  payments: ['payment', 'payments', 'pago', 'pagos', 'checkout', 'stripe', 'fintoc', 'transbank', 'mercadopago', 'billing', 'subscription', 'suscripcion', 'tarjeta', 'credit-card', 'a2a', 'transferencia', 'pac', 'mor', 'cobrar'],
   'sms-notifications': ['sms', 'otp', 'notification', 'notifications', 'notificacion', 'notificaciones', 'push', 'twilio', 'whatsapp', '2fa', 'telefonia', 'phone', 'mensaje', 'mensajes'],
   email: ['email', 'correo', 'correos', 'resend', 'sendgrid', 'postmark', 'smtp', 'newsletter', 'transaccional', 'deliverability'],
-  'ai-ml': ['ai', 'ia', 'llm', 'transcription', 'transcripcion', 'speech', 'voice', 'audio', 'whisper', 'vision', 'ocr', 'embeddings', 'rag', 'openai', 'claude', 'gemini', 'deepgram', 'elevenlabs', 'deepseek', 'groq'],
+  'ai-ml': ['ai', 'ia', 'llm', 'transcription', 'transcripcion', 'transcribir', 'speech', 'speech to text', 'voz a texto', 'voice', 'audio', 'llamadas', 'whisper', 'vision', 'ocr', 'embeddings', 'rag', 'openai', 'claude', 'gemini', 'deepgram', 'elevenlabs', 'deepseek', 'groq'],
   'maps-geo': ['map', 'maps', 'mapa', 'mapas', 'geo', 'geocoding', 'geolocalizacion', 'geolocalización', 'location', 'gps', 'places', 'radar', 'google maps', 'routing', 'ip', 'ipinfo'],
-  'auth-identity': ['auth', 'autenticacion', 'autenticación', 'login', 'clerk', 'auth0', 'sso', 'saml', 'passkey', 'passkeys', 'session', 'jwt', 'users', 'usuarios', 'oauth'],
+  'auth-identity': ['auth', 'autenticar', 'autenticacion', 'autenticación', 'inicio de sesion', 'login', 'clerk', 'auth0', 'sso', 'saml', 'passkey', 'passkeys', 'session', 'jwt', 'users', 'usuarios', 'oauth', 'google'],
   'storage-media': ['storage', 'almacenamiento', 's3', 'upload', 'uploads', 'archivos', 'files', 'images', 'imagenes', 'videos', 'cloudinary', 'uploadthing', 'cdn'],
   databases: ['database', 'db', 'base de datos', 'postgres', 'sql', 'redis', 'cache', 'sqlite', 'neon', 'turso', 'pinecone', 'qdrant', 'vector'],
   'monitoring-analytics': ['monitoring', 'analytics', 'monitoreo', 'analitica', 'analítica', 'sentry', 'posthog', 'errors', 'errores', 'logs', 'uptime', 'metrics'],
@@ -33,7 +33,11 @@ export function extractKeywordsAndCategory(query: string): {
     let matches = 0;
     for (const tw of triggerWords) {
       if (normalized.includes(tw)) {
-        matches += 2;
+        if (['autenticar', 'autenticacion', 'autenticación', 'inicio de sesion', 'login', 'transcribir', 'transcripcion', 'ocr', 'pago', 'pagos', 'cobrar'].includes(tw)) {
+          matches += 10;
+        } else {
+          matches += 2;
+        }
       }
     }
     if (matches > maxCatMatches) {
